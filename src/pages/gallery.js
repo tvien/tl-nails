@@ -8,7 +8,7 @@ import GalleryComponent from '../components/gallery'
 
 import PageHeader from '../components/page-header'
 import { INFO } from '../common/info.js'
-import img1 from '../images/loc/1c.jpeg'
+import img1 from '../images/loc/1c.JPEG'
 
 const Gallery = () => {
 	return (

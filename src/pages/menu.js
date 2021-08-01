@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import MenuComponent from '../components/menu'
 
 import Hero from '../components/hero'
-import heroImage1 from '../images/loc/3.jpeg'
+import heroImage1 from '../images/loc/3.JPEG'
 
 import PageHeader from '../components/page-header'
 

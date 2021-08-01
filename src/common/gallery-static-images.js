@@ -94,25 +94,25 @@ export const galleryHighQuality = [
 		quality={100}
 	/>,
 	<StaticImage
-		src='../images/gallery/16.jpeg'
+		src='../images/gallery/16.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={100}
 	/>,
 	<StaticImage
-		src='../images/gallery/17.jpeg'
+		src='../images/gallery/17.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={100}
 	/>,
 	<StaticImage
-		src='../images/gallery/18.jpeg'
+		src='../images/gallery/18.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={100}
 	/>,
 	<StaticImage
-		src='../images/gallery/19.jpeg'
+		src='../images/gallery/19.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={100}
@@ -124,25 +124,25 @@ export const galleryHighQuality = [
 		quality={100}
 	/>,
 	<StaticImage
-		src='../images/gallery/21.jpeg'
+		src='../images/gallery/21.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={100}
 	/>,
 	<StaticImage
-		src='../images/gallery/22.jpeg'
+		src='../images/gallery/22.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={100}
 	/>,
 	<StaticImage
-		src='../images/gallery/23.jpeg'
+		src='../images/gallery/23.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={100}
 	/>,
 	<StaticImage
-		src='../images/gallery/24.jpeg'
+		src='../images/gallery/24.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={100}
@@ -154,13 +154,13 @@ export const galleryHighQuality = [
 		quality={100}
 	/>,
 	<StaticImage
-		src='../images/gallery/26.jpeg'
+		src='../images/gallery/26.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={100}
 	/>,
 	<StaticImage
-		src='../images/gallery/27.jpeg'
+		src='../images/gallery/27.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={100}
@@ -260,25 +260,25 @@ export const galleryLowQuality = [
 		quality={5}
 	/>,
 	<StaticImage
-		src='../images/gallery/16.jpeg'
+		src='../images/gallery/16.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={5}
 	/>,
 	<StaticImage
-		src='../images/gallery/17.jpeg'
+		src='../images/gallery/17.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={5}
 	/>,
 	<StaticImage
-		src='../images/gallery/18.jpeg'
+		src='../images/gallery/18.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={5}
 	/>,
 	<StaticImage
-		src='../images/gallery/19.jpeg'
+		src='../images/gallery/19.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={5}
@@ -290,25 +290,25 @@ export const galleryLowQuality = [
 		quality={5}
 	/>,
 	<StaticImage
-		src='../images/gallery/21.jpeg'
+		src='../images/gallery/21.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={5}
 	/>,
 	<StaticImage
-		src='../images/gallery/22.jpeg'
+		src='../images/gallery/22.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={5}
 	/>,
 	<StaticImage
-		src='../images/gallery/23.jpeg'
+		src='../images/gallery/23.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={5}
 	/>,
 	<StaticImage
-		src='../images/gallery/24.jpeg'
+		src='../images/gallery/24.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={5}
@@ -320,13 +320,13 @@ export const galleryLowQuality = [
 		quality={5}
 	/>,
 	<StaticImage
-		src='../images/gallery/26.jpeg'
+		src='../images/gallery/26.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={5}
 	/>,
 	<StaticImage
-		src='../images/gallery/27.jpeg'
+		src='../images/gallery/27.JPEG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={5}
