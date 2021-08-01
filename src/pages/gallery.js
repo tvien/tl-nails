@@ -8,16 +8,11 @@ import GalleryComponent from '../components/gallery'
 
 import PageHeader from '../components/page-header'
 import { INFO } from '../common/info.js'
-import img1 from '../images/loc/1c.jpeg'
 
 const Gallery = () => {
 	return (
 		<Layout>
-			<PageHeader
-				title='Gallery'
-				// bgUrl={img1}
-				// bgStyles={{ backgroundPosition: '50% 40%' }}
-			/>
+			<PageHeader title='Gallery' />
 
 			<div className='m-0.5 md:my-3'>
 				<GalleryComponent animateInImmediately={true} />
@@ -46,7 +41,6 @@ const Gallery = () => {
 				heroTextContainerClass='md:text-white'
 				heroImageContainerClass=''
 				heroButtonClass='ring-white text-white hover:text-black md:hover:text-blue-400 hover:bg-white'
-				// className='from-green-500 from-red-300'
 			/>
 		</Layout>
 	)

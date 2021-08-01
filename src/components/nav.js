@@ -1,12 +1,10 @@
-import React, { cloneElement } from 'react'
+import React from 'react'
 
 import { Link } from 'gatsby'
 
 import { StaticImage } from 'gatsby-plugin-image'
 
 import useScrollTopChecker from '../hooks/useScrollTopChecker'
-
-import tnlLogo from '../images/tnl-logo.png'
 
 import { NAV_LINKS, SOCIAL_LINKS } from '../common/nav-items.js'
 import { INFO } from '../common/info.js'
@@ -42,26 +40,10 @@ const Nav = () => {
 	))
 
 	const midIdx = Math.floor(navLinx.length / 2)
-	const navLeft = navLinx.slice(0, midIdx)
-	const navRight = navLinx.slice(midIdx)
 
 	return (
 		<>
 			{/* Desktop nav */}
-			{/* <nav
-				className={`mx-auto h-16 md:h-24 sticky top-0 z-50 hidden md:flex justify-center backdrop-filter ${
-					scrolledFromTop ? 'backdrop-blur-sm' : ''
-				}`}
-			>
-				<ul className='flex items-center mr-4'>{navLeft}</ul>
-
-				<Link to='/' className='min-w-max'>
-					<img src={tnlLogo} className='h-full' />
-				</Link>
-
-				<ul className='flex items-center ml-4'>{navRight}</ul>
-			</nav> */}
-
 			<nav
 				className={`lg:px-6 h-16 md:h-24 sticky top-0 z-40 hidden md:block backdrop-filter ${
 					scrolledFromTop ? 'backdrop-blur-sm' : ''
@@ -72,13 +54,11 @@ const Nav = () => {
 				>
 					<div className='flex'>
 						<Link to='/' className='min-w-max py-4'>
-							{/* <img src={tnlLogo} className='h-full' /> */}
-
 							<StaticImage
 								src='../images/tnl-logo.png'
 								className={navLogoWrapper}
-								// imgClassName='h-full'
 								quality={100}
+								alt='T&L Nails logo'
 							/>
 						</Link>
 

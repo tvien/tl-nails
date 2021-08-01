@@ -9,8 +9,6 @@ import {
 	HiOutlineClock,
 } from 'react-icons/hi'
 
-import { GrMapLocation } from 'react-icons/gr'
-
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import PageHeader from '../components/page-header'
@@ -96,13 +94,6 @@ const Locations = () => {
 											<div className='ml-4'>
 												<p>{`${loc.address}`}</p>
 												<p>{`${loc.city}, ${loc.state} ${loc.zip}`}</p>
-
-												{/* <a
-											className='text-sm italic font-light text-red-500'
-											href='#'
-										>
-											(Get Directions)
-										</a> */}
 											</div>
 										</li>
 
@@ -116,13 +107,6 @@ const Locations = () => {
 												<a href={`tel:+1${loc.phone}`}>
 													{formattedPhone}
 												</a>
-												{/* <br />
-										<a
-											className='text-sm italic font-light text-red-500'
-											href='#'
-										>
-											(Call now)
-										</a> */}
 											</div>
 										</li>
 
@@ -187,7 +171,7 @@ const Locations = () => {
 				heroHeader="We're more than just nails"
 				heroSubHeader={
 					<>
-						We're located by{' '}
+						We're also a part of a community located by{' '}
 						<span className='font-semibold'>AMAZING</span>{' '}
 						restaurants, boutiques, cafes, and other small shops for
 						you to explore. Come get your nails done and experience

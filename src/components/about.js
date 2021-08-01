@@ -5,16 +5,9 @@ import { useSpring, animated, config } from 'react-spring'
 import useInViewChecker from '../hooks/useInViewChecker'
 import useIsMobileChecker from '../hooks/useIsMobileChecker'
 
-import { aboutImg, aboutImgContainer } from './about.module.css'
-
-import foot from '../images/foot.png'
 import lotus from '../images/lotus.png'
 import esthetician from '../images/esthetician.png'
-import nailArt from '../images/nail-art.png'
-import manicure from '../images/manicure.png'
 import attention from '../images/attention.png'
-import nailPolish1 from '../images/nail-polish1.png'
-import nailPolish2 from '../images/nail-polish2.png'
 import nailPolish3 from '../images/nail-polish3.png'
 
 import vid1 from '../videos/1.mp4'
@@ -32,16 +25,6 @@ const videos = [vid1, vid2, vid3, vid4, vid5, vid6, vid7, vid8, vid9, vid10]
 
 const About = () => {
 	const navBarOffset = 96 + 100
-
-	// const { ref, isInView } = useInViewChecker(navBarOffset)
-	// const [springAnimated, setspringAnimated] = useState(false)
-
-	// const springProps = useSpring({
-	// 	from: { width: '0%' },
-	// 	width: isInView || springAnimated ? '100%' : '0%',
-	// 	config: config.molasses,
-	// 	onStart: () => setspringAnimated(true),
-	// })
 
 	const isMobile = useIsMobileChecker()
 
@@ -91,36 +74,6 @@ const About = () => {
 	return (
 		<div className='container mx-auto'>
 			<div className='w-full flex flex-wrap'>
-				{/* <div className='w-full md:w-2/5 p-6 pb-0 md:pb-6'>
-					<div className='md:hidden mb-6 text-center'>
-						<h2 className='text-4xl'>What we're about</h2>
-
-						<div
-							className='bg-gradient-to-tr from-red-500 to-pink-400'
-							style={{
-								height: 7,
-								margin: '8px 0',
-								backgroundImage:
-									'linear-gradient(to right, #ef4444, #f74a63, #fa5481, #f9629c, #f472b6)',
-							}}
-						/>
-					</div>
-
-					<div
-						className={`relative overflow-hidden rounded-md mx-auto shadow-lg ${aboutImgContainer}`}
-						style={{
-							width: 'fit-content',
-						}}
-					>
-						<video autoPlay loop muted style={{ height: 450 }}>
-							<source
-								src={videos[randomVidIdx]}
-								type='video/mp4'
-							/>
-						</video>
-					</div>
-				</div> */}
-
 				<div className='w-full md:w-2/5 p-6 pb-0 md:pb-6'>
 					<div className='md:hidden mb-6 text-center'>
 						<h2 className='text-4xl'>What we're about</h2>
@@ -138,7 +91,7 @@ const About = () => {
 
 					<div className='relative'>
 						<div
-							className={`relative overflow-hidden rounded-md mx-auto shadow-lg ${aboutImgContainer}`}
+							className={`relative overflow-hidden rounded-md mx-auto shadow-lg`}
 							style={{
 								width: 'fit-content',
 								zIndex: 10,

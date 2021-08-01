@@ -4,8 +4,6 @@ import PropTypes from 'prop-types'
 
 import { heroTextBg, heroImg } from './hero.module.css'
 
-import landingStockImg from '../images/landing-mobile.jpg'
-
 const Hero = (props) => {
 	const {
 		rootClass,
@@ -24,7 +22,7 @@ const Hero = (props) => {
 
 		onHeroButtonClicked,
 	} = props
-	//bg-gradient-to-tr from-red-600 to-pink-400 text-white
+
 	return (
 		<div className={`flex flex-wrap overflow-hidden ${rootClass}`}>
 			<div

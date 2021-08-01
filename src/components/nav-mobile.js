@@ -4,14 +4,11 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 import { SiInstagram, SiYelp, SiFacebook } from 'react-icons/si'
 
-import { HiOutlinePhone } from 'react-icons/hi'
-
 import tnlLogo from '../images/tnl-logo.png'
 
-import { NAV_LINKS, SOCIAL_LINKS } from '../common/nav-items'
+import { NAV_LINKS } from '../common/nav-items'
 
 import { INFO } from '../common/info.js'
-import { navLogoWrapper } from './nav-mobile.module.css'
 
 const NavbarMobile = (props) => {
 	const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)

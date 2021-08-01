@@ -2,12 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import { NAV_LINKS, SOCIAL_LINKS } from '../common/nav-items.js'
+import { SOCIAL_LINKS } from '../common/nav-items.js'
 import { INFO, LOCATIONS } from '../common/info.js'
 
 import {
 	HiOutlineLocationMarker,
-	HiLocationMarker,
 	HiOutlinePhone,
 	HiOutlineClock,
 } from 'react-icons/hi'
@@ -62,16 +61,18 @@ export const FooterLocationDetails = ({ location }) => {
 						/>
 
 						<div className='ml-4'>
-							{location.schedule.map(([dayOfWeek, hours]) => (
-								<div>
-									<p>
-										{dayOfWeek}:{' '}
-										<span className='font-light'>
-											{hours}
-										</span>
-									</p>
-								</div>
-							))}
+							{location.schedule.map(
+								([dayOfWeek, hours], idx) => (
+									<div key={idx}>
+										<p>
+											{dayOfWeek}:{' '}
+											<span className='font-light'>
+												{hours}
+											</span>
+										</p>
+									</div>
+								)
+							)}
 						</div>
 					</li>
 				</ul>
@@ -96,7 +97,7 @@ const Footer = () => {
 		<div className='bg-gradient-to-tr from-gray-800 to-gray-900'>
 			<div className='container mx-auto'>
 				<div className='w-full'>
-					<div class='grid w-full grid-cols-1 md:grid-cols-3 gap-4 py-12 text-red-200'>
+					<div className='grid w-full grid-cols-1 md:grid-cols-3 gap-4 py-12 text-red-200'>
 						<div className='text-center'>
 							<p className='text-xl font-bold uppercase'>
 								Stay Social
@@ -108,6 +109,7 @@ const Footer = () => {
 								<StaticImage
 									className='w-56'
 									src='../images/tnl-logo-pink.png'
+									alt='T&L Nails Logo'
 								/>
 							</Link>
 

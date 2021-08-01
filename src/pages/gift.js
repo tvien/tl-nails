@@ -1,8 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-import MenuComponent from '../components/menu'
-
 import Hero from '../components/hero'
 import heroImage1 from '../images/landing-mobile.jpg'
 import hardWork from '../images/hard-work.png'
@@ -43,9 +41,7 @@ const Gift = () => {
 				heroHeader='Dolorem, aspernatur error'
 				heroSubHeader='Repellendus eum mollitia, magni at sint molestias!  Cum ex vitae, reiciendis nobis earum nihil porro possimus nam aliquam.'
 				heroButtonText='Book Now'
-				onHeroButtonClicked={() => {
-					console.log('BOOKED NOW!')
-				}}
+				onHeroButtonClicked={() => {}}
 				rootClass='bg-gradient-to-tr from-red-700 to-pink-500'
 				heroTextContainerClass='md:text-white'
 				heroButtonClass='ring-white text-white'

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, memo, useMemo } from 'react'
+import React, { useState, memo } from 'react'
 import { SiInstagram, SiYelp, SiFacebook } from 'react-icons/si'
 
 import { useSpring, animated, config } from 'react-spring'
@@ -14,11 +14,7 @@ import {
 } from './landing-hero.module.css'
 import tnlLogo from '../images/tnl-logo.png'
 
-import { NAV_LINKS, SOCIAL_LINKS } from '../common/nav-items'
-
 import { INFO } from '../common/info.js'
-
-import heroLanding1 from '../images/hero-landing/hero-landing-1.svg'
 
 const heroImgs = [
 	<StaticImage
@@ -26,67 +22,75 @@ const heroImgs = [
 		src='../images/hero-landing/hero-landing-1.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-2.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-3.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-4.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-5.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-6.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-7.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-8.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-9.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-10.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 ]
 
 const LandingHero = () => {
 	const isMobile = useIsMobileChecker()
-
-	console.log(isMobile)
 
 	const randIdx = Math.floor(Math.random() * heroImgs.length)
 
@@ -107,25 +111,15 @@ const LandingHero = () => {
 
 	const [reset, setReset] = useState(false)
 
-	console.log('RENDERING LANDING-HERO...')
-
 	const animatedProps = useSpring({
 		reset: reset,
 		from: { backgroundImage: colorSpectrum[0] },
-
 		to: colorSpectrum.map((grad) => ({ backgroundImage: grad })),
-
 		config: {
-			// ...config.molasses
 			duration: animationDuration,
 		},
-		// onStart: () => {
-		// 	console.log('ANIMATION STARTED')
-		// },
 		onRest: () => {
-			// UNCOMMENT THIS TO ALLOW LOOPING [Warning! This is still buggy as hell]
-			setReset((res) => !res)
-			console.log('ANIMATION IS COMPLETED')
+			setReset((res) => !res) // UNCOMMENT THIS TO ALLOW LOOPING
 		},
 		cancel: isMobile,
 	})
@@ -221,7 +215,6 @@ const LandingHero = () => {
 				<div className='w-7/12 flex items-center p-0 md:p-12 lg:p-24'>
 					{heroImgs[randIdx]}
 				</div>
-				{/* <div className={`w-3/5 ${landingBg}`} /> */}
 			</div>
 
 			{/* Mobile layout */}
