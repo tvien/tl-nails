@@ -1,0 +1,12 @@
+.page-header-container {
+	margin-top: -4.5rem;
+
+	background-position: 50% 70%;
+	background-size: cover;
+}
+
+@media (min-width: 768px) {
+	.page-header-container {
+		margin-top: -6rem;
+	}
+}

@@ -1,0 +1,8 @@
+.navLogoWrapper,
+.navLogoWrapper > div {
+	height: 100%;
+}
+
+.navLogoWrapper > div > img {
+	width: auto;
+}

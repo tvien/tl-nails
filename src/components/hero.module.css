@@ -1,0 +1,23 @@
+.heroImg {
+	position: absolute;
+	top: -100%;
+	left: 0;
+	right: 0;
+	bottom: -100%;
+	margin: auto;
+
+	min-height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.hero-text-bg {
+	background-position: center;
+	background-size: cover;
+}
+
+@media (min-width: 768px) {
+	.hero-text-bg {
+		background-image: none !important; /* Override the mobile bg styles */
+	}
+}

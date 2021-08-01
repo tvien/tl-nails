@@ -1,0 +1,24 @@
+.landing-hero-container {
+	margin-top: -4.5rem;
+}
+
+.landing-bg {
+	/* background-image: url('../images/hero-landing-1.svg'); */
+	/* background-image: url('../images/brush2.svg'); */
+	/* background-image: url('../images/asset2.png'); */
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.landing-bg-mobile {
+	background-image: url('../images/gallery/16.jpeg');
+	background-position: center;
+	background-size: cover;
+}
+
+@media (min-width: 768px) {
+	.landing-hero-container {
+		margin-top: -6rem;
+	}
+}

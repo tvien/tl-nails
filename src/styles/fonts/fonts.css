@@ -1,0 +1,59 @@
+@font-face {
+	font-family: 'Sailec';
+	src: url('ac9525e5f200f57332b3080d0db9d8f6.eot'); /* IE9*/
+	src: url('ac9525e5f200f57332b3080d0db9d8f6.eot?#iefix')
+			format('embedded-opentype'),
+		/* IE6-IE8 */ url('ac9525e5f200f57332b3080d0db9d8f6.woff2') format('woff2'),
+		/* chrome、firefox */ url('ac9525e5f200f57332b3080d0db9d8f6.woff')
+			format('woff'),
+		/* chrome、firefox */ url('ac9525e5f200f57332b3080d0db9d8f6.ttf')
+			format('truetype'),
+		/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+			url('ac9525e5f200f57332b3080d0db9d8f6.svg#Sailec Medium') format('svg'); /* iOS 4.1- */
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Sailec';
+	src: url('2fe381b3d8cf4ee5f331668970d8a65a.eot'); /* IE9*/
+	src: url('2fe381b3d8cf4ee5f331668970d8a65a.eot?#iefix')
+			format('embedded-opentype'),
+		/* IE6-IE8 */ url('2fe381b3d8cf4ee5f331668970d8a65a.woff2') format('woff2'),
+		/* chrome、firefox */ url('2fe381b3d8cf4ee5f331668970d8a65a.woff')
+			format('woff'),
+		/* chrome、firefox */ url('2fe381b3d8cf4ee5f331668970d8a65a.ttf')
+			format('truetype'),
+		/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+			url('2fe381b3d8cf4ee5f331668970d8a65a.svg#Sailec Light') format('svg'); /* iOS 4.1- */
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Sailec';
+	src: url('b411263ff1ec9f3bdea1f4145d93ab18.eot'); /* IE9*/
+	src: url('b411263ff1ec9f3bdea1f4145d93ab18.eot?#iefix')
+			format('embedded-opentype'),
+		/* IE6-IE8 */ url('b411263ff1ec9f3bdea1f4145d93ab18.woff2') format('woff2'),
+		/* chrome、firefox */ url('b411263ff1ec9f3bdea1f4145d93ab18.woff')
+			format('woff'),
+		/* chrome、firefox */ url('b411263ff1ec9f3bdea1f4145d93ab18.ttf')
+			format('truetype'),
+		/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+			url('b411263ff1ec9f3bdea1f4145d93ab18.svg#Sailec Thin') format('svg'); /* iOS 4.1- */
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: 'Sailec';
+	src: url('61b43418b9624db49ba89da5d1b7eec8.eot'); /* IE9*/
+	src: url('61b43418b9624db49ba89da5d1b7eec8.eot?#iefix')
+			format('embedded-opentype'),
+		/* IE6-IE8 */ url('61b43418b9624db49ba89da5d1b7eec8.woff2') format('woff2'),
+		/* chrome、firefox */ url('61b43418b9624db49ba89da5d1b7eec8.woff')
+			format('woff'),
+		/* chrome、firefox */ url('61b43418b9624db49ba89da5d1b7eec8.ttf')
+			format('truetype'),
+		/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+			url('61b43418b9624db49ba89da5d1b7eec8.svg#Sailec Bold') format('svg'); /* iOS 4.1- */
+	font-weight: bold;
+}
