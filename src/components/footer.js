@@ -2,12 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import { NAV_LINKS, SOCIAL_LINKS } from '../common/nav-items.js'
+import { SOCIAL_LINKS } from '../common/nav-items.js'
 import { INFO, LOCATIONS } from '../common/info.js'
+
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import {
 	HiOutlineLocationMarker,
-	HiLocationMarker,
 	HiOutlinePhone,
 	HiOutlineClock,
 } from 'react-icons/hi'
@@ -62,16 +63,18 @@ export const FooterLocationDetails = ({ location }) => {
 						/>
 
 						<div className='ml-4'>
-							{location.schedule.map(([dayOfWeek, hours]) => (
-								<div>
-									<p>
-										{dayOfWeek}:{' '}
-										<span className='font-light'>
-											{hours}
-										</span>
-									</p>
-								</div>
-							))}
+							{location.schedule.map(
+								([dayOfWeek, hours], idx) => (
+									<div key={idx}>
+										<p>
+											{dayOfWeek}:{' '}
+											<span className='font-light'>
+												{hours}
+											</span>
+										</p>
+									</div>
+								)
+							)}
 						</div>
 					</li>
 				</ul>
@@ -87,16 +90,16 @@ FooterLocationDetails.propTypes = {
 const Footer = () => {
 	const socialLinx = SOCIAL_LINKS.map((soc, idx) => (
 		<li key={idx} className='py-4 px-4 '>
-			<Link to={soc.url} title={soc.title} target='_blank'>
+			<OutboundLink href={soc.url} title={soc.title} target='_blank'>
 				{<soc.Icon size='1.5rem' />}
-			</Link>
+			</OutboundLink>
 		</li>
 	))
 	return (
 		<div className='bg-gradient-to-tr from-gray-800 to-gray-900'>
 			<div className='container mx-auto'>
 				<div className='w-full'>
-					<div class='grid w-full grid-cols-1 md:grid-cols-3 gap-4 py-12 text-red-200'>
+					<div className='grid w-full grid-cols-1 md:grid-cols-3 gap-4 py-12 text-red-200'>
 						<div className='text-center'>
 							<p className='text-xl font-bold uppercase'>
 								Stay Social
@@ -108,6 +111,7 @@ const Footer = () => {
 								<StaticImage
 									className='w-56'
 									src='../images/tnl-logo-pink.png'
+									alt='T&L Nails Logo'
 								/>
 							</Link>
 
@@ -136,13 +140,14 @@ const Footer = () => {
 			<div className='text-center text-xs text-gray-500 pb-6 px-6 font-light'>
 				© {new Date().getFullYear()} All Rights Reserved by T&L Nails |
 				Designed & developed by{' '}
-				<a
+				<OutboundLink
 					className='font-normal'
 					href='https://www.tonyvien.com/'
 					target='_blank'
+					rel='noreferrer'
 				>
 					tv
-				</a>{' '}
+				</OutboundLink>{' '}
 				<span className='text-xl'>🐱‍💻</span>
 			</div>
 		</div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, memo, useMemo } from 'react'
+import React, { useState, memo } from 'react'
 import { SiInstagram, SiYelp, SiFacebook } from 'react-icons/si'
 
 import { useSpring, animated, config } from 'react-spring'
@@ -8,17 +8,14 @@ import { StaticImage } from 'gatsby-plugin-image'
 import useIsMobileChecker from '../hooks/useIsMobileChecker'
 
 import {
-	landingBg,
 	landingBgMobile,
 	landingHeroContainer,
 } from './landing-hero.module.css'
 import tnlLogo from '../images/tnl-logo.png'
 
-import { NAV_LINKS, SOCIAL_LINKS } from '../common/nav-items'
-
 import { INFO } from '../common/info.js'
 
-import heroLanding1 from '../images/hero-landing/hero-landing-1.svg'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const heroImgs = [
 	<StaticImage
@@ -26,67 +23,75 @@ const heroImgs = [
 		src='../images/hero-landing/hero-landing-1.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-2.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-3.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-4.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-5.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-6.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-7.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-8.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-9.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 	<StaticImage
 		placeholder='none'
 		src='../images/hero-landing/hero-landing-10.svg'
 		imgClassName='w-full h-auto max-h-full'
 		quality={100}
+		alt='Landing T&L Nails Nail Art'
 	/>,
 ]
 
 const LandingHero = () => {
 	const isMobile = useIsMobileChecker()
-
-	console.log(isMobile)
 
 	const randIdx = Math.floor(Math.random() * heroImgs.length)
 
@@ -107,25 +112,15 @@ const LandingHero = () => {
 
 	const [reset, setReset] = useState(false)
 
-	console.log('RENDERING LANDING-HERO...')
-
 	const animatedProps = useSpring({
 		reset: reset,
 		from: { backgroundImage: colorSpectrum[0] },
-
 		to: colorSpectrum.map((grad) => ({ backgroundImage: grad })),
-
 		config: {
-			// ...config.molasses
 			duration: animationDuration,
 		},
-		// onStart: () => {
-		// 	console.log('ANIMATION STARTED')
-		// },
 		onRest: () => {
-			// UNCOMMENT THIS TO ALLOW LOOPING [Warning! This is still buggy as hell]
-			setReset((res) => !res)
-			console.log('ANIMATION IS COMPLETED')
+			setReset((res) => !res) // UNCOMMENT THIS TO ALLOW LOOPING
 		},
 		cancel: isMobile,
 	})
@@ -146,7 +141,7 @@ const LandingHero = () => {
 		<>
 			<p className='text-sm font-light italic py-2 text-red-500 md:text-red-300'>
 				follow us{' '}
-				<a className='font-normal' href='#'>
+				<a className='font-normal' href={INFO.instagramURL}>
 					@tl_nails813
 				</a>{' '}
 				<span className='not-italic'>📸</span>
@@ -183,27 +178,27 @@ const LandingHero = () => {
 			</button>
 
 			<div className='flex mt-6 space-x-9'>
-				<a
+				<OutboundLink
 					href={INFO.facebookURL}
 					className='text-red-400 hover:text-red-500'
 					target='_blank'
 				>
 					<SiFacebook size='1.35rem' />
-				</a>
-				<a
+				</OutboundLink>
+				<OutboundLink
 					href={INFO.instagramURL}
 					className='text-red-400 hover:text-red-500'
 					target='_blank'
 				>
 					<SiInstagram size='1.35rem' />
-				</a>
-				<a
+				</OutboundLink>
+				<OutboundLink
 					href={INFO.yelpURL}
 					className='text-red-400 hover:text-red-500'
 					target='_blank'
 				>
 					<SiYelp size='1.35rem' />
-				</a>
+				</OutboundLink>
 			</div>
 		</>
 	)
@@ -221,7 +216,6 @@ const LandingHero = () => {
 				<div className='w-7/12 flex items-center p-0 md:p-12 lg:p-24'>
 					{heroImgs[randIdx]}
 				</div>
-				{/* <div className={`w-3/5 ${landingBg}`} /> */}
 			</div>
 
 			{/* Mobile layout */}
@@ -231,6 +225,7 @@ const LandingHero = () => {
 						<img
 							src={tnlLogo}
 							className='h-auto w-10/12 p-6 mx-auto'
+							alt='T&L Nails Logo'
 						/>
 					</div>
 

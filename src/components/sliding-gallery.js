@@ -1,13 +1,8 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import { useSpring, animated, config } from 'react-spring'
-
-import { StaticImage } from 'gatsby-plugin-image'
-
-import { galleryImg, galleryImgWrapper } from './gallery.module.css'
+import { useSpring, animated } from 'react-spring'
 
 const SlidingGallery = ({ direction, images }) => {
-	// const [hovering, setHovering] = useState(false)
 	const [reset, setReset] = useState(false)
 
 	const sliderImgSize = 300
@@ -37,9 +32,7 @@ const SlidingGallery = ({ direction, images }) => {
 
 		onRest: () => {
 			setReset((res) => !res)
-			console.log('ANIMATION IS COMPLETED')
 		},
-		//pause: true,
 	})
 
 	return (
@@ -74,7 +67,7 @@ SlidingGallery.defaultProps = {
 }
 
 SlidingGallery.propTypes = {
-	direction: PropTypes.oneOfType(['ltr', 'rtl']),
+	direction: PropTypes.string,
 	images: PropTypes.array,
 }
 

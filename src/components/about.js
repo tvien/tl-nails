@@ -5,17 +5,11 @@ import { useSpring, animated, config } from 'react-spring'
 import useInViewChecker from '../hooks/useInViewChecker'
 import useIsMobileChecker from '../hooks/useIsMobileChecker'
 
-import { aboutImg, aboutImgContainer } from './about.module.css'
-
-import foot from '../images/foot.png'
 import lotus from '../images/lotus.png'
 import esthetician from '../images/esthetician.png'
-import nailArt from '../images/nail-art.png'
-import manicure from '../images/manicure.png'
 import attention from '../images/attention.png'
-import nailPolish1 from '../images/nail-polish1.png'
-import nailPolish2 from '../images/nail-polish2.png'
 import nailPolish3 from '../images/nail-polish3.png'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import vid1 from '../videos/1.mp4'
 import vid2 from '../videos/2.mp4'
@@ -32,16 +26,6 @@ const videos = [vid1, vid2, vid3, vid4, vid5, vid6, vid7, vid8, vid9, vid10]
 
 const About = () => {
 	const navBarOffset = 96 + 100
-
-	// const { ref, isInView } = useInViewChecker(navBarOffset)
-	// const [springAnimated, setspringAnimated] = useState(false)
-
-	// const springProps = useSpring({
-	// 	from: { width: '0%' },
-	// 	width: isInView || springAnimated ? '100%' : '0%',
-	// 	config: config.molasses,
-	// 	onStart: () => setspringAnimated(true),
-	// })
 
 	const isMobile = useIsMobileChecker()
 
@@ -91,36 +75,6 @@ const About = () => {
 	return (
 		<div className='container mx-auto'>
 			<div className='w-full flex flex-wrap'>
-				{/* <div className='w-full md:w-2/5 p-6 pb-0 md:pb-6'>
-					<div className='md:hidden mb-6 text-center'>
-						<h2 className='text-4xl'>What we're about</h2>
-
-						<div
-							className='bg-gradient-to-tr from-red-500 to-pink-400'
-							style={{
-								height: 7,
-								margin: '8px 0',
-								backgroundImage:
-									'linear-gradient(to right, #ef4444, #f74a63, #fa5481, #f9629c, #f472b6)',
-							}}
-						/>
-					</div>
-
-					<div
-						className={`relative overflow-hidden rounded-md mx-auto shadow-lg ${aboutImgContainer}`}
-						style={{
-							width: 'fit-content',
-						}}
-					>
-						<video autoPlay loop muted style={{ height: 450 }}>
-							<source
-								src={videos[randomVidIdx]}
-								type='video/mp4'
-							/>
-						</video>
-					</div>
-				</div> */}
-
 				<div className='w-full md:w-2/5 p-6 pb-0 md:pb-6'>
 					<div className='md:hidden mb-6 text-center'>
 						<h2 className='text-4xl'>What we're about</h2>
@@ -138,7 +92,7 @@ const About = () => {
 
 					<div className='relative'>
 						<div
-							className={`relative overflow-hidden rounded-md mx-auto shadow-lg ${aboutImgContainer}`}
+							className={`relative overflow-hidden rounded-md mx-auto shadow-lg`}
 							style={{
 								width: 'fit-content',
 								zIndex: 10,
@@ -179,13 +133,13 @@ const About = () => {
 						area, specializing in everything we can to help you find
 						your glow! So whether you’re looking to get gorgeous
 						nail art done or you just want to "
-						<a
+						<OutboundLink
 							href='https://www.youtube.com/watch?v=AU0h7TlZGO4'
 							target='_blank'
 							className='underline italic'
 						>
 							treat yo' self
-						</a>{' '}
+						</OutboundLink>{' '}
 						", we’re here and ready to help you step up your nail
 						game!
 					</p>
@@ -200,7 +154,7 @@ const About = () => {
 					<img
 						className='w-28 md:w-24 mx-auto mb-3 relative left-4'
 						src={attention}
-						alt=''
+						alt='Detailed-Oriented Nail Polish Happy Icon'
 					/>
 
 					<div className='inline-block'>
@@ -246,7 +200,7 @@ const About = () => {
 					<img
 						className='w-28 md:w-24 mx-auto mb-3'
 						src={esthetician}
-						alt=''
+						alt='Talented & Friendly Esthetician Nail Techician Icon'
 					/>
 
 					<div className='inline-block'>
@@ -292,7 +246,7 @@ const About = () => {
 					<img
 						className='w-28 md:w-24 mx-auto mb-3'
 						src={nailPolish3}
-						alt=''
+						alt='All the Colors You Need polishes icon'
 					/>
 
 					<div className='inline-block'>
@@ -338,7 +292,7 @@ const About = () => {
 					<img
 						className='w-28 md:w-24 mx-auto mb-3'
 						src={lotus}
-						alt=''
+						alt='Immaculate & Relaxing Lotus Icon'
 					/>
 
 					<div className='inline-block'>

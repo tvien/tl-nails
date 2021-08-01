@@ -9,8 +9,6 @@ import {
 	HiOutlineClock,
 } from 'react-icons/hi'
 
-import { GrMapLocation } from 'react-icons/gr'
-
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import PageHeader from '../components/page-header'
@@ -19,22 +17,29 @@ import heroImage1 from '../images/tampa-1.jpg'
 
 import { INFO, LOCATIONS } from '../common/info'
 
-const markerSize = 32
+import Seo from '../components/seo'
 
 const Locations = () => {
+	const markerSize = 32
+
 	return (
 		<Layout>
+			<Seo
+				title='Locations'
+				description="At T&L Nails, we understand that getting your nails done makes up only a fraction of your day. That's why we're located by some of the best restaurants, boutiques, cafes, shops, and other exciting points of interest for you to flaunt your nails!"
+			/>
+
 			<PageHeader title='Locations' />
 
 			<div className='container mx-auto lg:px-6  max-w-6xl'>
-				{LOCATIONS.map((loc) => {
+				{LOCATIONS.map((loc, idx) => {
 					let phoneStr = loc.phone.toString()
 					let formattedPhone = `(${phoneStr.substr(
 						0,
 						3
 					)}) ${phoneStr.substr(3, 3)}-${phoneStr.substr(6)}`
 					return (
-						<div className='w-full px-6 lg:px-0'>
+						<div className='w-full px-6 lg:px-0' key={idx}>
 							<div className='flex flex-wrap shadow-lg my-6 md:my-9 rounded-lg overflow-hidden'>
 								<div
 									className=' w-full md:w-1/2 lg:w-2/3'
@@ -96,13 +101,6 @@ const Locations = () => {
 											<div className='ml-4'>
 												<p>{`${loc.address}`}</p>
 												<p>{`${loc.city}, ${loc.state} ${loc.zip}`}</p>
-
-												{/* <a
-											className='text-sm italic font-light text-red-500'
-											href='#'
-										>
-											(Get Directions)
-										</a> */}
 											</div>
 										</li>
 
@@ -116,13 +114,6 @@ const Locations = () => {
 												<a href={`tel:+1${loc.phone}`}>
 													{formattedPhone}
 												</a>
-												{/* <br />
-										<a
-											className='text-sm italic font-light text-red-500'
-											href='#'
-										>
-											(Call now)
-										</a> */}
 											</div>
 										</li>
 
@@ -134,8 +125,11 @@ const Locations = () => {
 
 											<div className='ml-4'>
 												{loc.schedule.map(
-													([dayOfWeek, hours]) => (
-														<div>
+													(
+														[dayOfWeek, hours],
+														key
+													) => (
+														<div key={key}>
 															<p>
 																{dayOfWeek}:{' '}
 																<span className='font-light'>
@@ -187,7 +181,7 @@ const Locations = () => {
 				heroHeader="We're more than just nails"
 				heroSubHeader={
 					<>
-						We're located by{' '}
+						We're also a part of a community located by{' '}
 						<span className='font-semibold'>AMAZING</span>{' '}
 						restaurants, boutiques, cafes, and other small shops for
 						you to explore. Come get your nails done and experience

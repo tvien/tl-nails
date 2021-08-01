@@ -11,9 +11,16 @@ import PageHeader from '../components/page-header'
 
 import { INFO } from '../common/info'
 
+import Seo from '../components/seo'
+
 const Menu = () => {
 	return (
 		<Layout>
+			<Seo
+				title='Menu'
+				description='We offer exceptional manicures, pedicures, gels, dips, lash extensions & waxing. Check out our menu to see our full list of services!'
+			/>
+
 			<PageHeader title='Menu' />
 
 			<div className='mx-auto mt-6 mb-12 px-3 lg:px-6 max-w-4xl'>

@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 
-import { StaticImage } from 'gatsby-plugin-image'
-
 import manicureIcon from '../images/menu-icons/manicure.png'
 import pedicureIcon from '../images/menu-icons/pedicure.png'
 import extensionsIcon from '../images/menu-icons/extensions2.png'
@@ -234,65 +232,47 @@ const menu = [
 					{
 						name: 'Eyebrows',
 						description: ``,
-						price: 13,
-						additionName: 'Teapa',
-						additionPrice: 5,
+						price: 10,
 					},
 					{
 						name: 'Lip',
 						description: ``,
-						price: 16,
-						additionName: 'Teapa',
-						additionPrice: 6,
+						price: 8,
 					},
 					{
 						name: 'Chin',
 						description: ``,
-						price: 16,
-						additionName: 'Teapa',
-						additionPrice: 6,
+						price: 15,
 					},
 					{
 						name: 'Underarms',
 						description: ``,
-						price: 16,
-						additionName: 'Teapa',
-						additionPrice: 6,
+						price: 20,
 					},
 					{
 						name: 'Half Arm',
 						description: ``,
-						price: 16,
-						additionName: 'Teapa',
-						additionPrice: 6,
+						price: 30,
 					},
 					{
 						name: 'Full Arm',
 						description: ``,
-						price: 16,
-						additionName: 'Teapa',
-						additionPrice: 6,
+						price: 50,
 					},
 					{
 						name: 'Back',
 						description: ``,
-						price: 16,
-						additionName: 'Teapa',
-						additionPrice: 6,
+						price: 60,
 					},
 					{
 						name: 'Half Leg',
 						description: ``,
-						price: 16,
-						additionName: 'Teapa',
-						additionPrice: 6,
+						price: 50,
 					},
 					{
 						name: 'Full Leg',
 						description: ``,
-						price: 16,
-						additionName: 'Teapa',
-						additionPrice: 6,
+						price: 30,
 					},
 				],
 			},
@@ -387,7 +367,7 @@ const Menu = () => {
 									<img
 										src={menuIconColored}
 										className='w-9 md:w-12 mx-auto py-4'
-										alt=''
+										alt={`${menuTitle} Selected Menu Icon`}
 										style={{
 											display:
 												selectedMenuId === menuId
@@ -399,7 +379,7 @@ const Menu = () => {
 									<img
 										src={menuIcon}
 										className='w-9 md:w-12 mx-auto py-4'
-										alt=''
+										alt={`${menuTitle} Unselected Menu Icon`}
 										style={{
 											display:
 												selectedMenuId !== menuId
@@ -428,8 +408,11 @@ const Menu = () => {
 					>
 						<ul className='space-y-8' key={menuId}>
 							{menuItems.map(
-								({ name, description, price, additions }) => (
-									<>
+								(
+									{ name, description, price, additions },
+									idx
+								) => (
+									<div key={idx}>
 										<li
 											className='flex justify-between'
 											key={name}
@@ -473,7 +456,7 @@ const Menu = () => {
 													</div>
 												</li>
 											))}
-									</>
+									</div>
 								)
 							)}
 						</ul>

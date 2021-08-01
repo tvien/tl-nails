@@ -14,25 +14,24 @@ import servicesMenu from '../images/services-menu.jpg'
 import locations from '../images/loc/1c.jpeg'
 import tampa from '../images/explore-tpa.jpg'
 
-import { shuffle } from '../util/arrayUtil'
-
 import useIsMobileChecker from '../hooks/useIsMobileChecker'
 
-import {
-	galleryLowQuality,
-	galleryHighQuality,
-} from '../common/gallery-static-images'
+import { galleryHighQuality } from '../common/gallery-static-images'
 import Gallery from '../components/gallery'
 
 import { INFO } from '../common/info.js'
 
+import Seo from '../components/seo'
+
 const IndexPage = () => {
 	const isMobile = useIsMobileChecker()
 
-	const shuffledGallery = galleryHighQuality // shuffle(galleryLowQuality)
+	const shuffledGallery = galleryHighQuality
 
 	return (
 		<Layout>
+			<Seo title='Home' />
+
 			<LandingHero />
 
 			<div className='pt-6'>

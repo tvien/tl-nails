@@ -8,16 +8,21 @@ import GalleryComponent from '../components/gallery'
 
 import PageHeader from '../components/page-header'
 import { INFO } from '../common/info.js'
-import img1 from '../images/loc/1c.jpeg'
+
+import Seo from '../components/seo'
 
 const Gallery = () => {
 	return (
 		<Layout>
-			<PageHeader
+			<Seo
 				title='Gallery'
-				// bgUrl={img1}
-				// bgStyles={{ backgroundPosition: '50% 40%' }}
+				description="At T&L Nails, we strongly believe in fulling expressing yourself in
+				any shape, way, or form. Do you have any ideas? Show us
+				any nail art or design that inspires you and we'll do
+				our best to make it happen."
 			/>
+
+			<PageHeader title='Gallery' />
 
 			<div className='m-0.5 md:my-3'>
 				<GalleryComponent animateInImmediately={true} />
@@ -46,7 +51,6 @@ const Gallery = () => {
 				heroTextContainerClass='md:text-white'
 				heroImageContainerClass=''
 				heroButtonClass='ring-white text-white hover:text-black md:hover:text-blue-400 hover:bg-white'
-				// className='from-green-500 from-red-300'
 			/>
 		</Layout>
 	)
