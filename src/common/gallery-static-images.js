@@ -76,7 +76,7 @@ export const galleryHighQuality = [
 		quality={100}
 	/>,
 	<StaticImage
-		src='../images/gallery/13.jpg'
+		src='../images/gallery/13.JPG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={100}
@@ -242,7 +242,7 @@ export const galleryLowQuality = [
 		quality={5}
 	/>,
 	<StaticImage
-		src='../images/gallery/13.jpg'
+		src='../images/gallery/13.JPG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={5}
