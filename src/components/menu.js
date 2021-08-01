@@ -410,8 +410,11 @@ const Menu = () => {
 					>
 						<ul className='space-y-8' key={menuId}>
 							{menuItems.map(
-								({ name, description, price, additions }) => (
-									<>
+								(
+									{ name, description, price, additions },
+									idx
+								) => (
+									<div key={idx}>
 										<li
 											className='flex justify-between'
 											key={name}
@@ -455,7 +458,7 @@ const Menu = () => {
 													</div>
 												</li>
 											))}
-									</>
+									</div>
 								)
 							)}
 						</ul>

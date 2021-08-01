@@ -25,14 +25,14 @@ const Locations = () => {
 			<PageHeader title='Locations' />
 
 			<div className='container mx-auto lg:px-6  max-w-6xl'>
-				{LOCATIONS.map((loc) => {
+				{LOCATIONS.map((loc, idx) => {
 					let phoneStr = loc.phone.toString()
 					let formattedPhone = `(${phoneStr.substr(
 						0,
 						3
 					)}) ${phoneStr.substr(3, 3)}-${phoneStr.substr(6)}`
 					return (
-						<div className='w-full px-6 lg:px-0'>
+						<div className='w-full px-6 lg:px-0' key={idx}>
 							<div className='flex flex-wrap shadow-lg my-6 md:my-9 rounded-lg overflow-hidden'>
 								<div
 									className=' w-full md:w-1/2 lg:w-2/3'
@@ -118,8 +118,11 @@ const Locations = () => {
 
 											<div className='ml-4'>
 												{loc.schedule.map(
-													([dayOfWeek, hours]) => (
-														<div>
+													(
+														[dayOfWeek, hours],
+														key
+													) => (
+														<div key={key}>
 															<p>
 																{dayOfWeek}:{' '}
 																<span className='font-light'>
