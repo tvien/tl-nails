@@ -6,7 +6,7 @@ import { pageHeaderContainer } from './page-header.module.css'
 import defaultPageHeaderUrl from '../images/page-header-bg.jpg'
 import tnlLogo from '../images/tnl-logo.png'
 
-import imagebg from '../images/gallery/2.jpg'
+import imagebg from '../images/gallery/5.jpg'
 
 const PageHeader = (props) => {
 	return (
