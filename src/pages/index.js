@@ -11,7 +11,7 @@ import Layout from '../components/layout'
 
 import heroImage2 from '../images/landing-mobile2.jpg'
 import servicesMenu from '../images/services-menu.jpg'
-import locations from '../images/loc/1c.JPEG'
+import locations from '../images/loc/1c.jpeg'
 import tampa from '../images/explore-tpa.jpg'
 
 import { shuffle } from '../util/arrayUtil'
