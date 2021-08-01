@@ -9,7 +9,7 @@ import lotus from '../images/lotus.png'
 import esthetician from '../images/esthetician.png'
 import attention from '../images/attention.png'
 import nailPolish3 from '../images/nail-polish3.png'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { OutboundLink } from 'gatsby-plugin-google-gtag'
 
 import vid1 from '../videos/1.mp4'
 import vid2 from '../videos/2.mp4'

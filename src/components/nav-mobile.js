@@ -9,7 +9,7 @@ import { NAV_LINKS } from '../common/nav-items'
 
 import { INFO } from '../common/info.js'
 
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { OutboundLink } from 'gatsby-plugin-google-gtag'
 
 const NavbarMobile = (props) => {
 	const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)

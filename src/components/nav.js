@@ -11,7 +11,7 @@ import { INFO } from '../common/info.js'
 
 import { navLogoWrapper } from './nav.module.css'
 
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { OutboundLink } from 'gatsby-plugin-google-gtag'
 
 const Nav = () => {
 	const scrolledFromTop = useScrollTopChecker(0)

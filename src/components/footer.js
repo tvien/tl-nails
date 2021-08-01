@@ -5,7 +5,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { SOCIAL_LINKS } from '../common/nav-items.js'
 import { INFO, LOCATIONS } from '../common/info.js'
 
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { OutboundLink } from 'gatsby-plugin-google-gtag'
 
 import {
 	HiOutlineLocationMarker,
