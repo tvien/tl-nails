@@ -6,14 +6,14 @@ import { pageHeaderContainer } from './page-header.module.css'
 import defaultPageHeaderUrl from '../images/page-header-bg.jpg'
 import tnlLogo from '../images/tnl-logo.png'
 
-// import imagebg from '../images/gallery/1.jpg'
+import imagebg from '../images/gallery/2.jpg'
 
 const PageHeader = (props) => {
 	return (
 		<div
 			className={`filter ${pageHeaderContainer}`}
 			style={{
-				backgroundImage: `url('${props.bgUrl || defaultPageHeaderUrl}')`,
+				backgroundImage: `url('${props.bgUrl || imagebg}')`,
 				...props.bgStyles,
 			}}
 		>
