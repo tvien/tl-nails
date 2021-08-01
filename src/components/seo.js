@@ -5,6 +5,7 @@ import { useLocation } from '@reach/router'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import defaultSEOImage from '../images/gallery/22.jpg'
+import favicon from '../images/favicon.ico'
 
 const query = graphql`
 	query SEO {
@@ -73,6 +74,8 @@ const SEO = ({ title, description, image, article }) => {
 			)}
 
 			{seo.image && <meta name='twitter:image' content={seo.image} />}
+
+			<link rel='icon' href={favicon} />
 		</Helmet>
 	)
 }
