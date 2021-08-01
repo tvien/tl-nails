@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
 
 import { SiInstagram, SiYelp, SiFacebook } from 'react-icons/si'
 
@@ -9,6 +8,8 @@ import tnlLogo from '../images/tnl-logo.png'
 import { NAV_LINKS } from '../common/nav-items'
 
 import { INFO } from '../common/info.js'
+
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const NavbarMobile = (props) => {
 	const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
@@ -43,6 +44,7 @@ const NavbarMobile = (props) => {
 							<img
 								src={tnlLogo}
 								className='h-auto w-10/12 p-6 mx-auto'
+								alt='T&L Nails Mobile Logo'
 							/>
 
 							{/* <StaticImage
@@ -103,17 +105,26 @@ const NavbarMobile = (props) => {
 							</button>
 
 							<div className='flex justify-evenly mt-12'>
-								<a href={INFO.facebookURL} target='_blank'>
+								<OutboundLink
+									href={INFO.facebookURL}
+									target='_blank'
+								>
 									<SiFacebook size='1.5rem' />
-								</a>
+								</OutboundLink>
 
-								<a href={INFO.instagramURL} target='_blank'>
+								<OutboundLink
+									href={INFO.instagramURL}
+									target='_blank'
+								>
 									<SiInstagram size='1.5rem' />
-								</a>
+								</OutboundLink>
 
-								<a href={INFO.yelpURL} target='_blank'>
+								<OutboundLink
+									href={INFO.yelpURL}
+									target='_blank'
+								>
 									<SiYelp size='1.5rem' />
-								</a>
+								</OutboundLink>
 							</div>
 						</div>
 					</div>

@@ -39,6 +39,7 @@ const Modal = ({ open, onClose, children }) => {
 
 	return (
 		<div
+			role='presentation'
 			onClick={close}
 			ref={modalWrapperDivRef}
 			className='modal-instance-wrapper w-full h-screen flex items-center justify-center bg-black bg-opacity-50'

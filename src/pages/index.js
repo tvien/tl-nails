@@ -21,6 +21,8 @@ import Gallery from '../components/gallery'
 
 import { INFO } from '../common/info.js'
 
+import Seo from '../components/seo'
+
 const IndexPage = () => {
 	const isMobile = useIsMobileChecker()
 
@@ -28,6 +30,8 @@ const IndexPage = () => {
 
 	return (
 		<Layout>
+			<Seo title='Home' />
+
 			<LandingHero />
 
 			<div className='pt-6'>

@@ -47,10 +47,10 @@ const Gallery = (props) => {
 					<animated.div
 						key={idx}
 						style={styles}
-						className='h-32 sm:h-48 md:h-52 xl:h-64 w-full relative'
+						className='h-32 sm:h-48 md:h-52 xl:h-64 w-full relative cursor-pointer'
 						onClick={() => setSelectedSlideIdx(idx)}
 					>
-						<a>{galleryLowQuality[idx]}</a>
+						{galleryLowQuality[idx]}
 					</animated.div>
 				))}
 			</div>

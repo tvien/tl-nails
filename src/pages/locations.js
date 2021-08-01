@@ -17,11 +17,18 @@ import heroImage1 from '../images/tampa-1.jpg'
 
 import { INFO, LOCATIONS } from '../common/info'
 
-const markerSize = 32
+import Seo from '../components/seo'
 
 const Locations = () => {
+	const markerSize = 32
+
 	return (
 		<Layout>
+			<Seo
+				title='Locations'
+				description="At T&L Nails, we understand that getting your nails done makes up only a fraction of your day. That's why we're located by some of the best restaurants, boutiques, cafes, shops, and other exciting points of interest for you to flaunt your nails!"
+			/>
+
 			<PageHeader title='Locations' />
 
 			<div className='container mx-auto lg:px-6  max-w-6xl'>

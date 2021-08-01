@@ -8,13 +8,14 @@ import { StaticImage } from 'gatsby-plugin-image'
 import useIsMobileChecker from '../hooks/useIsMobileChecker'
 
 import {
-	landingBg,
 	landingBgMobile,
 	landingHeroContainer,
 } from './landing-hero.module.css'
 import tnlLogo from '../images/tnl-logo.png'
 
 import { INFO } from '../common/info.js'
+
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const heroImgs = [
 	<StaticImage
@@ -140,7 +141,7 @@ const LandingHero = () => {
 		<>
 			<p className='text-sm font-light italic py-2 text-red-500 md:text-red-300'>
 				follow us{' '}
-				<a className='font-normal' href='#'>
+				<a className='font-normal' href={INFO.instagramURL}>
 					@tl_nails813
 				</a>{' '}
 				<span className='not-italic'>📸</span>
@@ -177,27 +178,27 @@ const LandingHero = () => {
 			</button>
 
 			<div className='flex mt-6 space-x-9'>
-				<a
+				<OutboundLink
 					href={INFO.facebookURL}
 					className='text-red-400 hover:text-red-500'
 					target='_blank'
 				>
 					<SiFacebook size='1.35rem' />
-				</a>
-				<a
+				</OutboundLink>
+				<OutboundLink
 					href={INFO.instagramURL}
 					className='text-red-400 hover:text-red-500'
 					target='_blank'
 				>
 					<SiInstagram size='1.35rem' />
-				</a>
-				<a
+				</OutboundLink>
+				<OutboundLink
 					href={INFO.yelpURL}
 					className='text-red-400 hover:text-red-500'
 					target='_blank'
 				>
 					<SiYelp size='1.35rem' />
-				</a>
+				</OutboundLink>
 			</div>
 		</>
 	)
@@ -224,6 +225,7 @@ const LandingHero = () => {
 						<img
 							src={tnlLogo}
 							className='h-auto w-10/12 p-6 mx-auto'
+							alt='T&L Nails Logo'
 						/>
 					</div>
 

@@ -21,6 +21,7 @@ const PageHeader = (props) => {
 					<img
 						src={tnlLogo}
 						className='h-auto w-10/12 p-6 pb-0 mx-auto'
+						alt='T&L Logo'
 					/>
 				</a>
 			</div>

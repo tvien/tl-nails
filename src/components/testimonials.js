@@ -77,8 +77,7 @@ let testimonials = [
 ]
 
 export const TestimonialCard = (props) => {
-	const { author, stars, date, location, comment, photoUrl, reviewLink } =
-		props
+	const { author, stars, date, location, comment, photoUrl } = props
 
 	return (
 		<div className='h-full w-auto shadow-lg rounded-md overflow-hidden bg-white mx-1.5 md:mx-4 mb-5'>
@@ -88,7 +87,7 @@ export const TestimonialCard = (props) => {
 					<img
 						className='absolute -top-full left-0 right-0 -bottom-full m-auto'
 						src={photoUrl}
-						alt=''
+						alt='Testimonial Review'
 					/>
 				</div>
 			)}

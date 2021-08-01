@@ -9,9 +9,19 @@ import GalleryComponent from '../components/gallery'
 import PageHeader from '../components/page-header'
 import { INFO } from '../common/info.js'
 
+import Seo from '../components/seo'
+
 const Gallery = () => {
 	return (
 		<Layout>
+			<Seo
+				title='Gallery'
+				description="At T&L Nails, we strongly believe in fulling expressing yourself in
+				any shape, way, or form. Do you have any ideas? Show us
+				any nail art or design that inspires you and we'll do
+				our best to make it happen."
+			/>
+
 			<PageHeader title='Gallery' />
 
 			<div className='m-0.5 md:my-3'>

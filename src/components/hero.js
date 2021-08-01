@@ -68,7 +68,7 @@ const Hero = (props) => {
 				<img
 					className={`${heroImg} ${heroImageClass}`}
 					src={heroImageUrl}
-					alt=''
+					alt={`${heroHeader}`}
 				/>
 			</div>
 		</div>

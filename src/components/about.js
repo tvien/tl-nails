@@ -9,6 +9,7 @@ import lotus from '../images/lotus.png'
 import esthetician from '../images/esthetician.png'
 import attention from '../images/attention.png'
 import nailPolish3 from '../images/nail-polish3.png'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import vid1 from '../videos/1.mp4'
 import vid2 from '../videos/2.mp4'
@@ -132,13 +133,13 @@ const About = () => {
 						area, specializing in everything we can to help you find
 						your glow! So whether you’re looking to get gorgeous
 						nail art done or you just want to "
-						<a
+						<OutboundLink
 							href='https://www.youtube.com/watch?v=AU0h7TlZGO4'
 							target='_blank'
 							className='underline italic'
 						>
 							treat yo' self
-						</a>{' '}
+						</OutboundLink>{' '}
 						", we’re here and ready to help you step up your nail
 						game!
 					</p>
@@ -153,7 +154,7 @@ const About = () => {
 					<img
 						className='w-28 md:w-24 mx-auto mb-3 relative left-4'
 						src={attention}
-						alt=''
+						alt='Detailed-Oriented Nail Polish Happy Icon'
 					/>
 
 					<div className='inline-block'>
@@ -199,7 +200,7 @@ const About = () => {
 					<img
 						className='w-28 md:w-24 mx-auto mb-3'
 						src={esthetician}
-						alt=''
+						alt='Talented & Friendly Esthetician Nail Techician Icon'
 					/>
 
 					<div className='inline-block'>
@@ -245,7 +246,7 @@ const About = () => {
 					<img
 						className='w-28 md:w-24 mx-auto mb-3'
 						src={nailPolish3}
-						alt=''
+						alt='All the Colors You Need polishes icon'
 					/>
 
 					<div className='inline-block'>
@@ -291,7 +292,7 @@ const About = () => {
 					<img
 						className='w-28 md:w-24 mx-auto mb-3'
 						src={lotus}
-						alt=''
+						alt='Immaculate & Relaxing Lotus Icon'
 					/>
 
 					<div className='inline-block'>

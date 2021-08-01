@@ -16,7 +16,11 @@ const Gift = () => {
 				<div className='my-12 mx-auto  max-w-2xl text-center '>
 					<h2 className='text-5xl'>Coming Soon!</h2>
 
-					<img src={hardWork} alt='' className='mx-auto w-28 my-6' />
+					<img
+						src={hardWork}
+						alt='Developer working icon'
+						className='mx-auto w-28 my-6'
+					/>
 
 					<p className='my-6 px-6'>
 						Our developers are working hard to allow you to

@@ -150,23 +150,20 @@ export const galleryHighQuality = [
 		alt='T&L Nails Gallery Photo'
 		quality={100}
 	/>,
-	// <StaticImage
-	// 	src='../images/gallery/22.JPEG'
-	// 	className='gallery-img-wrapper'
-	// 	imgClassName='gallery-img rounded-sm'
-	// alt='T&L Nails Gallery Photo'
-	// 	quality={100}
-	// />,
-
-	// BAD ENCODING..
-
-	// <StaticImage
-	// 	src='../images/gallery/23.JPEG'
-	// 	className='gallery-img-wrapper'
-	// 	imgClassName='gallery-img rounded-sm'
-	//		alt='T&L Nails Gallery Photo'
-	// 	quality={100}
-	// />,
+	<StaticImage
+		src='../images/gallery/22.jpg'
+		className='gallery-img-wrapper'
+		imgClassName='gallery-img rounded-sm'
+		alt='T&L Nails Gallery Photo'
+		quality={100}
+	/>,
+	<StaticImage
+		src='../images/gallery/23.jpg'
+		className='gallery-img-wrapper'
+		imgClassName='gallery-img rounded-sm'
+		alt='T&L Nails Gallery Photo'
+		quality={100}
+	/>,
 	<StaticImage
 		src='../images/gallery/24.JPEG'
 		className='gallery-img-wrapper'
@@ -346,23 +343,21 @@ export const galleryLowQuality = [
 		alt='T&L Nails Gallery Photo'
 		quality={5}
 	/>,
-	// <StaticImage
-	// 	src='../images/gallery/22.JPEG'
-	// 	className='gallery-img-wrapper'
-	// 	imgClassName='gallery-img rounded-sm'
-	// alt='T&L Nails Gallery Photo'
-	// 	quality={5}
-	// />,
+	<StaticImage
+		src='../images/gallery/22.jpg'
+		className='gallery-img-wrapper'
+		imgClassName='gallery-img rounded-sm'
+		alt='T&L Nails Gallery Photo'
+		quality={5}
+	/>,
 
-	// BAD ENCODING..
-
-	// <StaticImage
-	// 	src='../images/gallery/23.JPEG'
-	// 	className='gallery-img-wrapper'
-	// 	imgClassName='gallery-img rounded-sm'
-	// alt='T&L Nails Gallery Photo'
-	// 	quality={5}
-	// />,
+	<StaticImage
+		src='../images/gallery/23.jpg'
+		className='gallery-img-wrapper'
+		imgClassName='gallery-img rounded-sm'
+		alt='T&L Nails Gallery Photo'
+		quality={5}
+	/>,
 	<StaticImage
 		src='../images/gallery/24.JPEG'
 		className='gallery-img-wrapper'

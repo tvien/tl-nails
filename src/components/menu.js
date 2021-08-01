@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 
-import { StaticImage } from 'gatsby-plugin-image'
-
 import manicureIcon from '../images/menu-icons/manicure.png'
 import pedicureIcon from '../images/menu-icons/pedicure.png'
 import extensionsIcon from '../images/menu-icons/extensions2.png'
@@ -369,7 +367,7 @@ const Menu = () => {
 									<img
 										src={menuIconColored}
 										className='w-9 md:w-12 mx-auto py-4'
-										alt=''
+										alt={`${menuTitle} Selected Menu Icon`}
 										style={{
 											display:
 												selectedMenuId === menuId
@@ -381,7 +379,7 @@ const Menu = () => {
 									<img
 										src={menuIcon}
 										className='w-9 md:w-12 mx-auto py-4'
-										alt=''
+										alt={`${menuTitle} Unselected Menu Icon`}
 										style={{
 											display:
 												selectedMenuId !== menuId

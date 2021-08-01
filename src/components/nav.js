@@ -11,6 +11,8 @@ import { INFO } from '../common/info.js'
 
 import { navLogoWrapper } from './nav.module.css'
 
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
+
 const Nav = () => {
 	const scrolledFromTop = useScrollTopChecker(0)
 
@@ -28,18 +30,16 @@ const Nav = () => {
 
 	const socialLinx = SOCIAL_LINKS.map((soc, idx) => (
 		<li key={idx} className='py-4 px-4 '>
-			<Link
-				to={soc.url}
+			<OutboundLink
+				href={soc.url}
 				target='_blank'
 				title={soc.title}
 				className='text-red-400 hover:text-red-500'
 			>
 				{<soc.Icon size='1.25rem' />}
-			</Link>
+			</OutboundLink>
 		</li>
 	))
-
-	const midIdx = Math.floor(navLinx.length / 2)
 
 	return (
 		<>

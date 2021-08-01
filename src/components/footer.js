@@ -5,6 +5,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { SOCIAL_LINKS } from '../common/nav-items.js'
 import { INFO, LOCATIONS } from '../common/info.js'
 
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
+
 import {
 	HiOutlineLocationMarker,
 	HiOutlinePhone,
@@ -88,9 +90,9 @@ FooterLocationDetails.propTypes = {
 const Footer = () => {
 	const socialLinx = SOCIAL_LINKS.map((soc, idx) => (
 		<li key={idx} className='py-4 px-4 '>
-			<Link to={soc.url} title={soc.title} target='_blank'>
+			<OutboundLink href={soc.url} title={soc.title} target='_blank'>
 				{<soc.Icon size='1.5rem' />}
-			</Link>
+			</OutboundLink>
 		</li>
 	))
 	return (
@@ -138,13 +140,14 @@ const Footer = () => {
 			<div className='text-center text-xs text-gray-500 pb-6 px-6 font-light'>
 				© {new Date().getFullYear()} All Rights Reserved by T&L Nails |
 				Designed & developed by{' '}
-				<a
+				<OutboundLink
 					className='font-normal'
 					href='https://www.tonyvien.com/'
 					target='_blank'
+					rel='noreferrer'
 				>
 					tv
-				</a>{' '}
+				</OutboundLink>{' '}
 				<span className='text-xl'>🐱‍💻</span>
 			</div>
 		</div>
