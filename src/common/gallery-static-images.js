@@ -129,18 +129,21 @@ export const galleryHighQuality = [
 		imgClassName='gallery-img rounded-sm'
 		quality={100}
 	/>,
-	<StaticImage
-		src='../images/gallery/22.JPEG'
-		className='gallery-img-wrapper'
-		imgClassName='gallery-img rounded-sm'
-		quality={100}
-	/>,
-	<StaticImage
-		src='../images/gallery/23.JPEG'
-		className='gallery-img-wrapper'
-		imgClassName='gallery-img rounded-sm'
-		quality={100}
-	/>,
+	// <StaticImage
+	// 	src='../images/gallery/22.JPEG'
+	// 	className='gallery-img-wrapper'
+	// 	imgClassName='gallery-img rounded-sm'
+	// 	quality={100}
+	// />,
+
+	// BAD ENCODING..
+
+	// <StaticImage
+	// 	src='../images/gallery/23.JPEG'
+	// 	className='gallery-img-wrapper'
+	// 	imgClassName='gallery-img rounded-sm'
+	// 	quality={100}
+	// />,
 	<StaticImage
 		src='../images/gallery/24.JPEG'
 		className='gallery-img-wrapper'
@@ -295,18 +298,21 @@ export const galleryLowQuality = [
 		imgClassName='gallery-img rounded-sm'
 		quality={5}
 	/>,
-	<StaticImage
-		src='../images/gallery/22.JPEG'
-		className='gallery-img-wrapper'
-		imgClassName='gallery-img rounded-sm'
-		quality={5}
-	/>,
-	<StaticImage
-		src='../images/gallery/23.JPEG'
-		className='gallery-img-wrapper'
-		imgClassName='gallery-img rounded-sm'
-		quality={5}
-	/>,
+	// <StaticImage
+	// 	src='../images/gallery/22.JPEG'
+	// 	className='gallery-img-wrapper'
+	// 	imgClassName='gallery-img rounded-sm'
+	// 	quality={5}
+	// />,
+
+	// BAD ENCODING..
+
+	// <StaticImage
+	// 	src='../images/gallery/23.JPEG'
+	// 	className='gallery-img-wrapper'
+	// 	imgClassName='gallery-img rounded-sm'
+	// 	quality={5}
+	// />,
 	<StaticImage
 		src='../images/gallery/24.JPEG'
 		className='gallery-img-wrapper'
