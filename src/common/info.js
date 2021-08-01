@@ -1,6 +1,6 @@
 export const INFO = {
 	primaryPhone: 8133040330,
-	email: 'info@tnl-nails.com',
+	email: 'info@tlnailstampa.com',
 	facebookURL: 'https://www.facebook.com/tlnails.tampa/',
 	instagramURL: 'https://www.instagram.com/tl_nails813/',
 	yelpURL: 'https://www.yelp.com/biz/t-and-l-nails-tampa',

@@ -115,8 +115,11 @@ const Footer = () => {
 								{socialLinx}
 							</ul>
 
-							<a className='font-light' href=''>
-								info@tnl-nails.com
+							<a
+								className='font-light'
+								href={`mailto:${INFO.email}`}
+							>
+								{INFO.email}
 							</a>
 						</div>
 
