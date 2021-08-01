@@ -70,7 +70,7 @@ export const galleryHighQuality = [
 		quality={100}
 	/>,
 	<StaticImage
-		src='../images/gallery/12.jpg'
+		src='../images/gallery/12.JPG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={100}
@@ -88,7 +88,7 @@ export const galleryHighQuality = [
 		quality={100}
 	/>,
 	<StaticImage
-		src='../images/gallery/15.png'
+		src='../images/gallery/15.PNG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={100}
@@ -118,7 +118,7 @@ export const galleryHighQuality = [
 		quality={100}
 	/>,
 	<StaticImage
-		src='../images/gallery/20.jpg'
+		src='../images/gallery/20.JPG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={100}
@@ -236,7 +236,7 @@ export const galleryLowQuality = [
 		quality={5}
 	/>,
 	<StaticImage
-		src='../images/gallery/12.jpg'
+		src='../images/gallery/12.JPG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={5}
@@ -254,7 +254,7 @@ export const galleryLowQuality = [
 		quality={5}
 	/>,
 	<StaticImage
-		src='../images/gallery/15.png'
+		src='../images/gallery/15.PNG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={5}
@@ -284,7 +284,7 @@ export const galleryLowQuality = [
 		quality={5}
 	/>,
 	<StaticImage
-		src='../images/gallery/20.jpg'
+		src='../images/gallery/20.JPG'
 		className='gallery-img-wrapper'
 		imgClassName='gallery-img rounded-sm'
 		quality={5}
