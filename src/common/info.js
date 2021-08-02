@@ -11,7 +11,7 @@ export const LOCATIONS = [
 		icon: '✨',
 		location: 'Kennedy Boulevard',
 		description: 'Our newest location by Downtown Tampa!',
-		address: '1506 W Kennedy Blvd',
+		address: '1506 W Kennedy Blvd Suite B',
 		googleMapsLink: 'https://goo.gl/maps/qfAkgw3xDxRb4Q7u8',
 		city: 'Tampa',
 		state: 'FL',

@@ -56,6 +56,11 @@ const menu = [
 				price: undefined,
 				additions: [
 					{
+						name: 'Add Extension',
+						description: `(+5)`,
+						price: undefined,
+					},
+					{
 						name: 'Stiletto',
 						description: `(+5)`,
 						price: undefined,
@@ -88,28 +93,28 @@ const menu = [
 		menuItems: [
 			{
 				name: 'Classic Pedicure',
-				description: `A 30 minute service that includes trimming and shaping nails and cuticles, exfoliation of the feet and legs, sole buffering, 5 minutes massage for the legs and feet, and an optional color application of your choice`,
+				description: `A 30 minute service that includes trimming and shaping nails and cuticles, exfoliation of the feet and legs, sole buffering, massage for the legs and feet, and an optional color application of your choice`,
 				price: 30,
 			},
 			{
 				name: 'Signature Citrus Pedicure',
-				description: `A 45 minute service that includes trimming and shaping nails and cuticles, sugar scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, 10 minutes massage for the legs and feet, and an optional color application of your choice`,
+				description: `An hour long service that includes trimming and shaping nails and cuticles, sugar scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, 10 minutes massage for the legs and feet, and an optional color application of your choice`,
 				price: 55,
 			},
 			{
 				name: 'Signature Cucumber Pedicure',
-				description: `A 45 minute service that includes trimming and shaping nails and cuticles, our signature cucumber scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, 10 minutes massage for the legs and feet, and an optional color application of your choice`,
+				description: `An hour long service that includes trimming and shaping nails and cuticles, our signature cucumber scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, 10 minutes massage for the legs and feet, and an optional color application of your choice`,
 				price: 55,
 			},
 			{
 				name: 'CBD & Mint Pedicure',
-				description: `A 45 minute service that includes trimming and shaping nails and cuticles, our signature CBD & Mint scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, 10 minutes massage for the legs and feet, and an optional color application of your choice`,
+				description: `An hour long service that includes trimming and shaping nails and cuticles, our signature CBD & Mint scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, 10 minutes massage for the legs and feet, and an optional color application of your choice`,
 				price: 60,
 			},
 			{
 				name: 'Luxery Pedicure',
-				description: `A 60 minute service that includes trimming and shaping nails and cuticles, sugar scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, paraffin wax, hot stone massage for the legs and feet, and an optional color application of your choice`,
-				price: 60,
+				description: `An hour and fifteen minute service that includes trimming and shaping nails and cuticles, sugar scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, paraffin wax, hot stone massage for the legs and feet, and an optional color application of your choice`,
+				price: 75,
 			},
 		],
 	},
@@ -126,14 +131,14 @@ const menu = [
 				price: 33,
 				additions: [
 					{
-						name: 'Fill',
-						description: '',
-						price: 23,
-					},
-					{
 						name: 'w/ Gel',
 						description: '',
 						price: 53,
+					},
+					{
+						name: 'Fill',
+						description: '',
+						price: 23,
 					},
 					{
 						name: 'w/ Gel Fill',
@@ -213,6 +218,11 @@ const menu = [
 						description: `(+5)`,
 						price: undefined,
 					},
+					{
+						name: 'Extra Length',
+						description: `(+10)`,
+						price: undefined,
+					},
 				],
 			},
 		],
@@ -252,27 +262,27 @@ const menu = [
 					{
 						name: 'Half Arm',
 						description: ``,
-						price: 30,
+						price: '30+',
 					},
 					{
 						name: 'Full Arm',
 						description: ``,
-						price: 50,
+						price: '50+',
 					},
 					{
 						name: 'Back',
 						description: ``,
-						price: 60,
+						price: '60+',
 					},
 					{
 						name: 'Half Leg',
 						description: ``,
-						price: 50,
+						price: '50+',
 					},
 					{
 						name: 'Full Leg',
 						description: ``,
-						price: 30,
+						price: '30+',
 					},
 				],
 			},
