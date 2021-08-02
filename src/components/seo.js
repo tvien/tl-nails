@@ -74,6 +74,20 @@ const SEO = ({ title, description, image, article }) => {
 			{seo.image && <meta name='twitter:image' content={seo.image} />}
 
 			<link rel='icon' href={favicon} />
+
+			{/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+			<script
+				async
+				src='https://www.googletagmanager.com/gtag/js?id=G-2SDPKW8XWE'
+			></script>
+
+			<script>{`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2SDPKW8XWE');
+`}</script>
 		</Helmet>
 	)
 }

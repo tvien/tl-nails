@@ -214,7 +214,7 @@ const LandingHero = () => {
 				</div>
 
 				<div className='w-7/12 flex items-center p-0 md:p-12 lg:p-24'>
-					{heroImgs[randIdx]}
+					{heroImgs[1]}
 				</div>
 			</div>
 
