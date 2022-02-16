@@ -122,7 +122,7 @@ const LandingHero = () => {
 		onRest: () => {
 			setReset((res) => !res) // UNCOMMENT THIS TO ALLOW LOOPING
 		},
-		// cancel: isMobile,
+		cancel: isMobile,
 	})
 
 	const headerSpringProps = useSpring({
