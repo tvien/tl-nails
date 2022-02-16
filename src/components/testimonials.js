@@ -131,7 +131,7 @@ export const TestimonialCard = (props) => {
 const Testimonials = () => {
 	const isMobile = useIsMobileChecker()
 
-	const slidesPerView = (isMobile ? 1 : 3) + 0.1
+	const slidesPerView = (isMobile ? 1 : 3) + 0.15
 
 	return (
 		<>
@@ -150,7 +150,8 @@ const Testimonials = () => {
 					className='pb-6'
 					spaceBetween={0}
 					slidesPerView={slidesPerView}
-					navigation={!isMobile}
+					navigation={false}
+					// navigation={!isMobile} todo: fix this
 					scrollbar={false}
 					centeredSlides={isMobile}
 				>

@@ -99,7 +99,10 @@ const About = () => {
 							}}
 						>
 							<video autoPlay loop muted style={{ height: 450 }}>
-								<source src={videos[4]} type='video/mp4' />
+								<source
+									src={videos[randomVidIdx]}
+									type='video/mp4'
+								/>
 							</video>
 						</div>
 					</div>

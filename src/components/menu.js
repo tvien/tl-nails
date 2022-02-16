@@ -43,12 +43,12 @@ const menu = [
 			{
 				name: 'Dip Manicure',
 				description: `A manicure along with a strong like acrylic without the damage. Zero dry time. Soaks off easier than gel. 2 to 3 weeks wear.`,
-				price: 50,
+				price: 55,
 			},
 			{
 				name: 'Dip Polish Change',
 				description: `We'll remove your existing dip, trim and shape your nails, and then apply a dip polish of your choice`,
-				price: 40,
+				price: 45,
 			},
 			{
 				name: 'Extras',
@@ -116,6 +116,25 @@ const menu = [
 				description: `An hour and fifteen minute service that includes trimming and shaping nails and cuticles, sugar scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, paraffin wax, hot stone massage for the legs and feet, and an optional color application of your choice`,
 				price: 75,
 			},
+			{
+				name: 'Combos',
+				description: ``,
+				price: undefined,
+				additions: [
+					{
+						name: 'Classic Mani & Pedi',
+						price: 45,
+					},
+					{
+						name: 'Gel Mani & Pedi',
+						price: 65,
+					},
+					{
+						name: 'Gel Mani & Gel Pedi',
+						price: 85,
+					},
+				],
+			},
 		],
 	},
 	{
@@ -128,22 +147,22 @@ const menu = [
 			{
 				name: 'Acrylic Full Set',
 				description: `Acrylic nails are are a mix of powder and liquid monomer that's combined into a blob of dough, shaped onto your nails with a brush, and then air-dried. Acrylics do not require a lamp to cure, and they're great for changing the shape or extending your nails.`,
-				price: 33,
+				price: 35,
 				additions: [
 					{
 						name: 'w/ Gel',
 						description: '',
-						price: 53,
+						price: 55,
 					},
 					{
 						name: 'Fill',
 						description: '',
-						price: 23,
+						price: 25,
 					},
 					{
 						name: 'w/ Gel Fill',
 						description: '',
-						price: 43,
+						price: 45,
 					},
 				],
 			},
@@ -179,7 +198,7 @@ const menu = [
 			{
 				name: 'Hard Gel Full Set',
 				description: `Hard gel is a nail enhancement like acrylic nails, except it cures in a UV light. It is NOT gel polish/shellac/soft gel/soak off gel. You can put gel polish over hard gel (and you should because it looks great). You can extend the length of the nail with hard gel, just like acrylic. It can be sculpted and shaped just like acrylic. The only difference is that hard gel hardens through UV light rather than through evaporating solvents (like acrylic).`,
-				price: 55,
+				price: 60,
 				additions: [
 					{
 						name: 'Fill',
@@ -191,7 +210,7 @@ const menu = [
 			{
 				name: 'Apres Gel-X',
 				description: `Apres Gel-X nails are like the lovechild of a gel mani, acrylic extensions and press-on nails. They’re applied over your entire nail bed (not just the tips, like acrylics or hard gel extensions). The extensions are clear – which means they can be used to create trends like seaglass nails – and come in different shapes and lengths.`,
-				price: 60,
+				price: 65,
 			},
 			{
 				name: 'Extras',

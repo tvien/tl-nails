@@ -122,7 +122,7 @@ const LandingHero = () => {
 		onRest: () => {
 			setReset((res) => !res) // UNCOMMENT THIS TO ALLOW LOOPING
 		},
-		cancel: isMobile,
+		// cancel: isMobile,
 	})
 
 	const headerSpringProps = useSpring({
@@ -180,21 +180,21 @@ const LandingHero = () => {
 			<div className='flex mt-6 space-x-9'>
 				<OutboundLink
 					href={INFO.facebookURL}
-					className='text-red-400 hover:text-red-500'
+					className='text-red-400 hover:text-red-600'
 					target='_blank'
 				>
 					<SiFacebook size='1.35rem' />
 				</OutboundLink>
 				<OutboundLink
 					href={INFO.instagramURL}
-					className='text-red-400 hover:text-red-500'
+					className='text-red-400 hover:text-red-600'
 					target='_blank'
 				>
 					<SiInstagram size='1.35rem' />
 				</OutboundLink>
 				<OutboundLink
 					href={INFO.yelpURL}
-					className='text-red-400 hover:text-red-500'
+					className='text-red-400 hover:text-red-600'
 					target='_blank'
 				>
 					<SiYelp size='1.35rem' />
@@ -220,7 +220,7 @@ const LandingHero = () => {
 
 			{/* Mobile layout */}
 			<div className={`h-full md:hidden ${landingBgMobile}`}>
-				<div className='h-full flex items-center flex-wrap backdrop-filter backdrop-brightness-115'>
+				<div className='h-full flex items-center flex-wrap backdrop-filter backdrop-brightness-75'>
 					<div className='w-full absolute top-0'>
 						<img
 							src={tnlLogo}
