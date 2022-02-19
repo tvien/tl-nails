@@ -96,13 +96,13 @@ const LandingHero = () => {
 	const randIdx = Math.floor(Math.random() * heroImgs.length)
 
 	let colorSpectrum = [
-		'linear-gradient(45deg, rgba(255,60,172), rgba(120,75,160), rgba(43,134,197)',
-		'linear-gradient(25deg, rgba(81,220,255), rgba(206,94,255),  rgba(255,222,79))',
 		'linear-gradient(45deg, rgba(250,139,255), rgba(43,210,255),  rgba(43,255,136))',
 		'linear-gradient(125deg, rgba(81,220,255), rgba(206,94,255),  rgba(255,222,79))',
 		'linear-gradient(135deg, rgba(255,154,139), rgba(255,106,136),  rgba(255,153,172))',
 		'linear-gradient(165deg, rgba(255,119,43), rgba(250,217,97),  rgba(255,119,43))',
 		'linear-gradient(225deg, rgba(65,88,208), rgba(200,80,192),  rgba(255,204,112))',
+		'linear-gradient(45deg, rgba(255,60,172), rgba(120,75,160), rgba(43,134,197)',
+		'linear-gradient(25deg, rgba(81,220,255), rgba(206,94,255),  rgba(255,222,79))',
 	]
 
 	// Leave the ending color to be the starting color for smoother looping effect
