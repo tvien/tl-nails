@@ -94,27 +94,27 @@ const menu = [
 			{
 				name: 'Classic Pedicure',
 				description: `A 30 minute service that includes trimming and shaping nails and cuticles, exfoliation of the feet and legs, sole buffering, massage for the legs and feet, and an optional color application of your choice`,
-				price: 30,
+				price: 32,
 			},
 			{
 				name: 'Signature Citrus Pedicure',
 				description: `An hour long service that includes trimming and shaping nails and cuticles, sugar scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, 10 minutes massage for the legs and feet, and an optional color application of your choice`,
-				price: 55,
+				price: 58,
 			},
 			{
 				name: 'Signature Cucumber Pedicure',
 				description: `An hour long service that includes trimming and shaping nails and cuticles, our signature cucumber scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, 10 minutes massage for the legs and feet, and an optional color application of your choice`,
-				price: 55,
+				price: 58,
 			},
 			{
 				name: 'CBD & Mint Pedicure',
 				description: `An hour long service that includes trimming and shaping nails and cuticles, our signature CBD & Mint scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, 10 minutes massage for the legs and feet, and an optional color application of your choice`,
-				price: 60,
+				price: 65,
 			},
 			{
 				name: 'Luxery Pedicure',
 				description: `An hour and fifteen minute service that includes trimming and shaping nails and cuticles, sugar scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, paraffin wax, hot stone massage for the legs and feet, and an optional color application of your choice`,
-				price: 75,
+				price: 80,
 			},
 			{
 				name: 'Combos',
@@ -123,15 +123,15 @@ const menu = [
 				additions: [
 					{
 						name: 'Classic Mani & Pedi',
-						price: 45,
+						price: 50,
 					},
 					{
 						name: 'Gel Mani & Pedi',
-						price: 65,
+						price: 70,
 					},
 					{
 						name: 'Gel Mani & Gel Pedi',
-						price: 85,
+						price: 90,
 					},
 				],
 			},
@@ -147,7 +147,7 @@ const menu = [
 			{
 				name: 'Acrylic Full Set',
 				description: `Acrylic nails are are a mix of powder and liquid monomer that's combined into a blob of dough, shaped onto your nails with a brush, and then air-dried. Acrylics do not require a lamp to cure, and they're great for changing the shape or extending your nails.`,
-				price: 35,
+				price: 43,
 				additions: [
 					{
 						name: 'w/ Gel',
@@ -157,7 +157,7 @@ const menu = [
 					{
 						name: 'Fill',
 						description: '',
-						price: 25,
+						price: 33,
 					},
 					{
 						name: 'w/ Gel Fill',
@@ -176,11 +176,6 @@ const menu = [
 						description: '',
 						price: 55,
 					},
-					{
-						name: 'Pink Fill',
-						description: '',
-						price: 35,
-					},
 				],
 			},
 			{
@@ -198,12 +193,12 @@ const menu = [
 			{
 				name: 'Hard Gel Full Set',
 				description: `Hard gel is a nail enhancement like acrylic nails, except it cures in a UV light. It is NOT gel polish/shellac/soft gel/soak off gel. You can put gel polish over hard gel (and you should because it looks great). You can extend the length of the nail with hard gel, just like acrylic. It can be sculpted and shaped just like acrylic. The only difference is that hard gel hardens through UV light rather than through evaporating solvents (like acrylic).`,
-				price: 60,
+				price: 65,
 				additions: [
 					{
 						name: 'Fill',
 						description: '',
-						price: 50,
+						price: 55,
 					},
 				],
 			},
