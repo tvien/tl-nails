@@ -12,6 +12,39 @@ import extensionsIconColored from '../images/menu-icons/extensions2-c.png'
 import waxingIconColored from '../images/menu-icons/waxing-c.png'
 import eyelashIconColored from '../images/menu-icons/eyelash-c.png'
 
+const extensionSubAdditions = {
+	name: '*Speciality Shape Extra',
+	description: ``,
+	price: undefined,
+	items: [
+		{
+			name: 'Stiletto',
+			description: `(+5)`,
+			price: undefined,
+		},
+		{
+			name: 'Coffin',
+			description: `(+5)`,
+			price: undefined,
+		},
+		{
+			name: 'Almond',
+			description: `(+5)`,
+			price: undefined,
+		},
+		{
+			name: 'Round Extra',
+			description: `(+5)`,
+			price: undefined,
+		},
+		{
+			name: 'Length Extra',
+			description: `(+10)`,
+			price: undefined,
+		},
+	],
+}
+
 const menu = [
 	{
 		menuId: 'hands',
@@ -49,6 +82,26 @@ const menu = [
 				name: 'Dip Polish Change',
 				description: `We'll remove your existing dip, trim and shape your nails, and then apply a dip polish of your choice`,
 				price: 45,
+			},
+			{
+				name: 'Regular Polish Hands',
+				description: null,
+				price: 13,
+			},
+			{
+				name: 'Regular Polish Toes',
+				description: null,
+				price: 15,
+			},
+			{
+				name: 'Nail Trim & Shape',
+				description: null,
+				price: 10,
+			},
+			{
+				name: 'Buff Shine',
+				description: null,
+				price: 4,
 			},
 			{
 				name: 'Extras',
@@ -145,26 +198,27 @@ const menu = [
 		menuIconColored: extensionsIconColored,
 		menuItems: [
 			{
-				name: 'Acrylic Full Set',
+				name: 'Acrylic Full Set (Regular Polish)',
 				description: `Acrylic nails are are a mix of powder and liquid monomer that's combined into a blob of dough, shaped onto your nails with a brush, and then air-dried. Acrylics do not require a lamp to cure, and they're great for changing the shape or extending your nails.`,
 				price: 43,
 				additions: [
 					{
-						name: 'w/ Gel',
-						description: '',
-						price: 55,
-					},
-					{
-						name: 'Fill',
+						name: 'Fill (Regular Polish)',
 						description: '',
 						price: 33,
 					},
 					{
-						name: 'w/ Gel Fill',
+						name: 'Fullset w/ Gel Polish',
+						description: '',
+						price: 55,
+					},
+					{
+						name: 'Fill w/ Gel Polish',
 						description: '',
 						price: 45,
 					},
 				],
+				subAddition: extensionSubAdditions,
 			},
 			{
 				name: 'Pink & White Full Set',
@@ -177,6 +231,7 @@ const menu = [
 						price: 55,
 					},
 				],
+				subAddition: extensionSubAdditions,
 			},
 			{
 				name: 'Pink & White Ombre',
@@ -189,10 +244,11 @@ const menu = [
 						price: 60,
 					},
 				],
+				subAddition: extensionSubAdditions,
 			},
 			{
-				name: 'Hard Gel Full Set',
-				description: `Hard gel is a nail enhancement like acrylic nails, except it cures in a UV light. It is NOT gel polish/shellac/soft gel/soak off gel. You can put gel polish over hard gel (and you should because it looks great). You can extend the length of the nail with hard gel, just like acrylic. It can be sculpted and shaped just like acrylic. The only difference is that hard gel hardens through UV light rather than through evaporating solvents (like acrylic).`,
+				name: 'Builder Gel Full Set',
+				description: `Builder gel is a nail enhancement like acrylic nails, except it cures in a gel light. It is NOT gel polish/shellac/soft gel/soak off gel. You can put gel polish over hard gel (and you should because it looks great). You can extend the length of the nail with hard gel, just like acrylic. It can be sculpted and shaped just like acrylic. The only difference is that builder gel hardens through gel light rather than through evaporating solvents (like acrylic).`,
 				price: 65,
 				additions: [
 					{
@@ -201,43 +257,13 @@ const menu = [
 						price: 55,
 					},
 				],
+				subAddition: extensionSubAdditions,
 			},
 			{
 				name: 'Apres Gel-X',
 				description: `Apres Gel-X nails are like the lovechild of a gel mani, acrylic extensions and press-on nails. They’re applied over your entire nail bed (not just the tips, like acrylics or hard gel extensions). The extensions are clear – which means they can be used to create trends like seaglass nails – and come in different shapes and lengths.`,
 				price: 65,
-			},
-			{
-				name: 'Extras',
-				description: ``,
-				price: undefined,
-				additions: [
-					{
-						name: 'Stiletto',
-						description: `(+5)`,
-						price: undefined,
-					},
-					{
-						name: 'Coffin',
-						description: `(+5)`,
-						price: undefined,
-					},
-					{
-						name: 'Almond',
-						description: `(+5)`,
-						price: undefined,
-					},
-					{
-						name: 'Round Extra',
-						description: `(+5)`,
-						price: undefined,
-					},
-					{
-						name: 'Extra Length',
-						description: `(+10)`,
-						price: undefined,
-					},
-				],
+				subAddition: extensionSubAdditions,
 			},
 		],
 	},
@@ -433,7 +459,13 @@ const Menu = () => {
 						<ul className='space-y-8' key={menuId}>
 							{menuItems.map(
 								(
-									{ name, description, price, additions },
+									{
+										name,
+										description,
+										price,
+										additions,
+										subAddition,
+									},
 									idx
 								) => (
 									<div key={idx}>
@@ -480,6 +512,55 @@ const Menu = () => {
 													</div>
 												</li>
 											))}
+
+										{subAddition && (
+											<li
+												style={{
+													marginTop: '0.5rem',
+													marginLeft: '1rem',
+												}}
+											>
+												<div>
+													<p className='text-sm text-gray-500'>
+														{subAddition.name}
+													</p>
+												</div>
+
+												{subAddition.items &&
+													subAddition.items.map(
+														(a, idx) => (
+															<li
+																key={idx}
+																className='flex justify-between'
+																style={{
+																	marginTop:
+																		'0.5rem',
+																	marginLeft:
+																		'2rem',
+																}}
+															>
+																<div>
+																	<p className='text-xs text-gray-500'>
+																		{a.name}{' '}
+																		<span className='text-xs italic font-light text-gray-500'>
+																			{
+																				a.description
+																			}
+																		</span>
+																	</p>
+																</div>
+																<div>
+																	<p>
+																		{
+																			a.price
+																		}
+																	</p>
+																</div>
+															</li>
+														)
+													)}
+											</li>
+										)}
 									</div>
 								)
 							)}
