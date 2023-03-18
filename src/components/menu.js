@@ -77,11 +77,13 @@ const menu = [
 				name: 'Dip Manicure',
 				description: `A manicure along with a strong like acrylic without the damage. Zero dry time. Soaks off easier than gel. 2 to 3 weeks wear.`,
 				price: 55,
+				subAddition: extensionSubAdditions,
 			},
 			{
 				name: 'Dip Polish Change',
 				description: `We'll remove your existing dip, trim and shape your nails, and then apply a dip polish of your choice`,
 				price: 45,
+				subAddition: extensionSubAdditions,
 			},
 			{
 				name: 'Regular Polish Hands',
