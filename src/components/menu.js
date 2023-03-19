@@ -12,6 +12,43 @@ import extensionsIconColored from '../images/menu-icons/extensions2-c.png'
 import waxingIconColored from '../images/menu-icons/waxing-c.png'
 import eyelashIconColored from '../images/menu-icons/eyelash-c.png'
 
+const dipSubAdditions = {
+	name: '*Speciality Shape Extra',
+	description: ``,
+	price: undefined,
+	items: [
+		{
+			name: 'Stiletto',
+			description: `(+5)`,
+			price: undefined,
+		},
+		{
+			name: 'Coffin',
+			description: `(+5)`,
+			price: undefined,
+		},
+		{
+			name: 'Almond',
+			description: `(+5)`,
+			price: undefined,
+		},
+		{
+			name: 'Round Extra',
+			description: `(+5)`,
+			price: undefined,
+		},
+		{
+			name: 'Add Extension',
+			description: `(+5)`,
+			price: undefined,
+		},
+		{
+			name: 'Length Extra',
+			price: undefined,
+		},
+	],
+}
+
 const extensionSubAdditions = {
 	name: '*Speciality Shape Extra',
 	description: ``,
@@ -39,7 +76,6 @@ const extensionSubAdditions = {
 		},
 		{
 			name: 'Length Extra',
-			description: `(+10)`,
 			price: undefined,
 		},
 	],
@@ -77,13 +113,13 @@ const menu = [
 				name: 'Dip Manicure',
 				description: `A manicure along with a strong like acrylic without the damage. Zero dry time. Soaks off easier than gel. 2 to 3 weeks wear.`,
 				price: 55,
-				subAddition: extensionSubAdditions,
+				subAddition: dipSubAdditions,
 			},
 			{
 				name: 'Dip Polish Change',
 				description: `We'll remove your existing dip, trim and shape your nails, and then apply a dip polish of your choice`,
 				price: 45,
-				subAddition: extensionSubAdditions,
+				subAddition: dipSubAdditions,
 			},
 			{
 				name: 'Regular Polish Hands',
@@ -104,38 +140,6 @@ const menu = [
 				name: 'Buff Shine',
 				description: null,
 				price: 4,
-			},
-			{
-				name: 'Extras',
-				description: ``,
-				price: undefined,
-				additions: [
-					{
-						name: 'Add Extension',
-						description: `(+5)`,
-						price: undefined,
-					},
-					{
-						name: 'Stiletto',
-						description: `(+5)`,
-						price: undefined,
-					},
-					{
-						name: 'Coffin',
-						description: `(+5)`,
-						price: undefined,
-					},
-					{
-						name: 'Almond',
-						description: `(+5)`,
-						price: undefined,
-					},
-					{
-						name: 'Round Extra',
-						description: `(+5)`,
-						price: undefined,
-					},
-				],
 			},
 		],
 	},
