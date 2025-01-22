@@ -74,7 +74,7 @@ const SEO = ({ title, description, image, article }) => {
 			{seo.image && <meta name='twitter:image' content={seo.image} />}
 
 			<link rel='icon' href={favicon} />
-			<!-- Hotjar Tracking Code for https://www.tlnailstampa.com/ -->
+			{/* <!-- Hotjar Tracking Code --> */}
 			<script>
 				{`(function(h,o,t,j,a,r){
 			        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
