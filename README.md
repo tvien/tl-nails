@@ -1,54 +1,61 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# T&L Nail Shoppe Website
 
-## 🚀 Quick start
+T&L Nail Shoppe website featuring a gallery of photos, menu, locations, and contact information. Built with Gatsby and React for fast performance and modern web standards.
 
-1.  **Create a Gatsby site.**
+🌐 **Live Site:** [www.tlnailstampa.com](https://www.tlnailstampa.com)
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Getting Started
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+### Prerequisites
 
-2.  **Start developing.**
+- Node.js (version 12 or higher)
+- npm
 
-    Navigate into your new site’s directory and start it up.
+### Installation
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/tvien/tl-nails
+   cd tl-nails
+   ```
 
-3.  **Open the code and start customizing!**
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-    Your site is now running at http://localhost:8000!
+3. Start the development server:
+   ```bash
+   npm run develop
+   ```
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+4. Open your browser and visit `http://localhost:8000`
 
-4.  **Learn more**
+## Available Scripts
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- `npm run develop` - Start the development server
+- `npm run build` - Build the site for production
+- `npm run serve` - Serve the production build locally
+- `npm run clean` - Clean the Gatsby cache and public directories
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Deployment
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+To build for production:
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```bash
+npm run build
+```
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+The built files will be in the `public/` directory, ready to deploy to your hosting provider.
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Built With
 
-## 🚀 Quick start (Gatsby Cloud)
+- [Gatsby](https://www.gatsbyjs.com/) - Static site generator
+- [React](https://reactjs.org/) - UI library
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+## Learn More
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+- [Gatsby Documentation](https://www.gatsbyjs.com/docs/)
+- [Gatsby Tutorial](https://www.gatsbyjs.com/tutorial/)
+- [Gatsby Starters](https://www.gatsbyjs.com/starters/)
