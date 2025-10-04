@@ -12,28 +12,26 @@ import extensionsIconColored from '../images/menu-icons/extensions2-c.png'
 import waxingIconColored from '../images/menu-icons/waxing-c.png'
 import eyelashIconColored from '../images/menu-icons/eyelash-c.png'
 
+const maniSubAdditions = {
+    name: 'Additions',
+    description: ``,
+    price: undefined,
+    items: [
+        {
+            name: 'Dazzle Dry',
+            description: `(+15)`,
+            price: undefined,
+        },
+    ],
+}
+
 const dipSubAdditions = {
-	name: '*Speciality Shape Extra',
+	name: 'Additions',
 	description: ``,
 	price: undefined,
 	items: [
 		{
-			name: 'Stiletto',
-			description: `(+5)`,
-			price: undefined,
-		},
-		{
-			name: 'Coffin',
-			description: `(+5)`,
-			price: undefined,
-		},
-		{
-			name: 'Almond',
-			description: `(+5)`,
-			price: undefined,
-		},
-		{
-			name: 'Round Extra',
+			name: 'Soak off',
 			description: `(+5)`,
 			price: undefined,
 		},
@@ -42,15 +40,11 @@ const dipSubAdditions = {
 			description: `(+5)`,
 			price: undefined,
 		},
-		{
-			name: 'Length Extra',
-			price: undefined,
-		},
 	],
 }
 
 const extensionSubAdditions = {
-	name: '*Speciality Shape Extra',
+	name: 'Speciality Shape Extras',
 	description: ``,
 	price: undefined,
 	items: [
@@ -75,7 +69,8 @@ const extensionSubAdditions = {
 			price: undefined,
 		},
 		{
-			name: 'Length Extra',
+			name: 'Medium/Long Length',
+            description: '(price varies)',
 			price: undefined,
 		},
 	],
@@ -92,12 +87,14 @@ const menu = [
 			{
 				name: 'Classic Manicure',
 				description: `Trim and shape nails and cuticles, full arm and hand massage and an optional color application of your choice`,
-				price: 20,
+				price: 25,
+                subAddition: maniSubAdditions
 			},
 			{
 				name: 'Signature Manicure',
 				description: `Trim and shape nails and cuticles, sugar scrub, moisturizing hand mask and hot towel wrap, full arm and hand massage, and a color application of your choice`,
 				price: 35,
+                subAddition: maniSubAdditions
 			},
 			{
 				name: 'Gel Manicure',
@@ -112,13 +109,13 @@ const menu = [
 			{
 				name: 'Dip Manicure',
 				description: `A manicure along with a strong like acrylic without the damage. Zero dry time. Soaks off easier than gel. 2 to 3 weeks wear.`,
-				price: 55,
+				price: 60,
 				subAddition: dipSubAdditions,
 			},
 			{
 				name: 'Dip Polish Change',
 				description: `We'll remove your existing dip, trim and shape your nails, and then apply a dip polish of your choice`,
-				price: 45,
+				price: 50,
 				subAddition: dipSubAdditions,
 			},
 			{
@@ -158,23 +155,40 @@ const menu = [
 			{
 				name: 'Signature Citrus Pedicure',
 				description: `An hour long service that includes trimming and shaping nails and cuticles, sugar scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, 10 minutes massage for the legs and feet, and an optional color application of your choice`,
-				price: 58,
+				price: 63,
 			},
 			{
 				name: 'Signature Cucumber Pedicure',
 				description: `An hour long service that includes trimming and shaping nails and cuticles, our signature cucumber scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, 10 minutes massage for the legs and feet, and an optional color application of your choice`,
-				price: 58,
+				price: 63,
 			},
 			{
 				name: 'CBD & Mint Pedicure',
 				description: `An hour long service that includes trimming and shaping nails and cuticles, our signature CBD & Mint scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, 10 minutes massage for the legs and feet, and an optional color application of your choice`,
-				price: 65,
+				price: 70,
 			},
 			{
-				name: 'Luxery Pedicure',
+				name: 'Luxury Pedicure',
 				description: `An hour and fifteen minute service that includes trimming and shaping nails and cuticles, sugar scrub exfoliation for the feet and legs, sole buffering, moisturizing foot mask with hot towels, paraffin wax, hot stone massage for the legs and feet, and an optional color application of your choice`,
-				price: 80,
+				price: 85,
 			},
+            {
+                name: 'Additions',
+                description: undefined,
+                price: undefined,
+                additions: [
+                    {
+                        name: 'Add Gel Polish',
+                        description: '(+20)',
+                        price: undefined
+                    },
+                    {
+                        name: 'Add Dazzle Dry',
+                        description: '(+15)',
+                        price: undefined
+                    }
+                ]
+            },
 			{
 				name: 'Combos',
 				description: ``,
@@ -182,15 +196,15 @@ const menu = [
 				additions: [
 					{
 						name: 'Classic Mani & Pedi',
-						price: 50,
+						price: 57,
 					},
 					{
 						name: 'Gel Mani & Pedi',
-						price: 70,
+						price: 72,
 					},
 					{
 						name: 'Gel Mani & Gel Pedi',
-						price: 90,
+						price: 92,
 					},
 				],
 			},
@@ -206,71 +220,90 @@ const menu = [
 			{
 				name: 'Acrylic Full Set (Regular Polish)',
 				description: `Acrylic nails are are a mix of powder and liquid monomer that's combined into a blob of dough, shaped onto your nails with a brush, and then air-dried. Acrylics do not require a lamp to cure, and they're great for changing the shape or extending your nails.`,
-				price: 43,
-				additions: [
-					{
-						name: 'Fill (Regular Polish)',
-						description: '',
-						price: 33,
-					},
-					{
-						name: 'Fullset w/ Gel Polish',
-						description: '',
-						price: 55,
-					},
-					{
-						name: 'Fill w/ Gel Polish',
-						description: '',
-						price: 45,
-					},
-				],
+				price: 45,
 				subAddition: extensionSubAdditions,
 			},
-			{
-				name: 'Pink & White Full Set',
-				description: `Pink & white nails, also known as French tips, are a look consisting of white tips on a pink nail base. They are typically achieved by adding a plastic tip or sculpting one to the nail and covering it in acrylic powder and/or gel.`,
-				price: 60,
-				additions: [
-					{
-						name: 'Fill',
-						description: '',
-						price: 55,
-					},
-				],
-				subAddition: extensionSubAdditions,
-			},
-			{
-				name: 'Pink & White Ombre',
-				description: `A popular pink and white ombre look is French ombre. If you haven't heard of that before, then this design uses the classic light pink and white colors but instead of creating white tips, the colors are used in an ombre blend instead. `,
-				price: 65,
-				additions: [
-					{
-						name: 'Fill',
-						description: '',
-						price: 60,
-					},
-				],
-				subAddition: extensionSubAdditions,
-			},
+            {
+                name: 'Acrylic Fill (w/ Regular Polish)',
+                description: undefined,
+                price: 40,
+                subAddition: {
+                    name: 'Additions',
+                    description: ``,
+                    price: undefined,
+                    items: [
+                        {
+                            name: 'Medium/Long Length',
+                            description: '(price varies)',
+                            price: undefined,
+                        },
+                    ],
+                }
+            },
+            {
+                name: 'Acrylic Full Set (Gel Polish)',
+                description: ``,
+                price: 55,
+                subAddition: extensionSubAdditions,
+            },
+            {
+                name: 'Acrylic Fill (w/ Gel Polish)',
+                description: undefined,
+                price: 50,
+                subAddition: {
+                    name: 'Additions',
+                    description: ``,
+                    price: undefined,
+                    items: [
+                        {
+                            name: 'Medium/Long Length',
+                            description: '(price varies)',
+                            price: undefined,
+                        },
+                    ],
+                }
+            },
 			{
 				name: 'Builder Gel Full Set',
 				description: `Builder gel is a nail enhancement like acrylic nails, except it cures in a gel light. It is NOT gel polish/shellac/soft gel/soak off gel. You can put gel polish over hard gel (and you should because it looks great). You can extend the length of the nail with hard gel, just like acrylic. It can be sculpted and shaped just like acrylic. The only difference is that builder gel hardens through gel light rather than through evaporating solvents (like acrylic).`,
 				price: 65,
-				additions: [
-					{
-						name: 'Fill',
-						description: '',
-						price: 55,
-					},
-				],
 				subAddition: extensionSubAdditions,
 			},
+            {
+                name: 'Builder Gel Full Set Fill',
+                price: 58,
+                description: '',
+                subAddition: {
+                    name: 'Additions',
+                    description: ``,
+                    price: undefined,
+                    items: [
+                        {
+                            name: 'Medium/Long Length',
+                            description: '(price varies)',
+                            price: undefined,
+                        },
+                    ],
+                }
+            },
 			{
 				name: 'Apres Gel-X',
 				description: `Apres Gel-X nails are like the lovechild of a gel mani, acrylic extensions and press-on nails. They’re applied over your entire nail bed (not just the tips, like acrylics or hard gel extensions). The extensions are clear – which means they can be used to create trends like seaglass nails – and come in different shapes and lengths.`,
 				price: 65,
 				subAddition: extensionSubAdditions,
 			},
+            {
+                name: 'Additions',
+                description: undefined,
+                price: undefined,
+                additions: [
+                    {
+                        name: 'French Polish',
+                        description: '(+10)',
+                        price: undefined
+                    },
+                ]
+            },
 		],
 	},
 	{
@@ -288,12 +321,12 @@ const menu = [
 					{
 						name: 'Eyebrows',
 						description: ``,
-						price: 10,
+						price: 12,
 					},
 					{
 						name: 'Lip',
 						description: ``,
-						price: 8,
+						price: 10,
 					},
 					{
 						name: 'Chin',
@@ -303,12 +336,12 @@ const menu = [
 					{
 						name: 'Underarms',
 						description: ``,
-						price: 20,
+						price: 25,
 					},
 					{
 						name: 'Half Arm',
 						description: ``,
-						price: '30+',
+						price: '35+',
 					},
 					{
 						name: 'Full Arm',
@@ -318,7 +351,7 @@ const menu = [
 					{
 						name: 'Back',
 						description: ``,
-						price: '60+',
+						price: '65+',
 					},
 					{
 						name: 'Half Leg',
@@ -328,7 +361,7 @@ const menu = [
 					{
 						name: 'Full Leg',
 						description: ``,
-						price: '30+',
+						price: '80+',
 					},
 				],
 			},
@@ -354,17 +387,17 @@ const menu = [
 					{
 						name: 'Fill',
 						description: `(2 Weeks)`,
-						price: 60,
+						price: 65,
 					},
 					{
 						name: 'Fill',
 						description: `(3 Weeks)`,
-						price: 70,
+						price: 75,
 					},
 					{
 						name: 'Fill',
 						description: `(4 Weeks)`,
-						price: 80,
+						price: 85,
 					},
 				],
 			},
@@ -381,20 +414,47 @@ const menu = [
 					{
 						name: 'Fill',
 						description: `(2 Weeks)`,
-						price: 75,
+						price: 80,
 					},
 					{
 						name: 'Fill',
 						description: `(3 Weeks)`,
-						price: 85,
+						price: 90,
 					},
 					{
 						name: 'Fill',
 						description: `(4 Weeks)`,
-						price: 95,
+						price: 100,
 					},
 				],
 			},
+            {
+                name: 'Hybrid',
+                description: undefined,
+                price: undefined,
+                additions: [
+                    {
+                        name: 'Full Set',
+                        description: ``,
+                        price: 165,
+                    },
+                    {
+                        name: 'Fill',
+                        description: `(2 Weeks)`,
+                        price: 75,
+                    },
+                    {
+                        name: 'Fill',
+                        description: `(3 Weeks)`,
+                        price: 85,
+                    },
+                    {
+                        name: 'Fill',
+                        description: `(4 Weeks)`,
+                        price: 95,
+                    },
+                ],
+            },
 		],
 	},
 ]
