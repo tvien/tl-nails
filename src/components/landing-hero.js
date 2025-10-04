@@ -108,7 +108,7 @@ const LandingHero = () => {
 	// Leave the ending color to be the starting color for smoother looping effect
 	colorSpectrum = colorSpectrum.concat([colorSpectrum[0]])
 
-	const animationDuration = 5000
+	const animationDuration = 3000
 
 	const [reset, setReset] = useState(false)
 
