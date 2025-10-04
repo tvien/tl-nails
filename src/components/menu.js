@@ -254,7 +254,7 @@ const menu = [
 				subAddition: extensionSubAdditions,
 			},
             {
-                name: 'Builder Gel Full Set Fill',
+                name: 'Builder Gel Fill',
                 price: 58,
                 description: '',
                 additions: extensionAdditions,
