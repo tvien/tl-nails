@@ -43,6 +43,14 @@ const dipSubAdditions = {
 	],
 }
 
+const extensionAdditions = [
+    {
+        name: 'Medium/Long Length',
+        description: '(additional price varies)',
+        price: undefined,
+    },
+];
+
 const extensionSubAdditions = {
 	name: 'Speciality Shape Extras',
 	description: ``,
@@ -66,11 +74,6 @@ const extensionSubAdditions = {
 		{
 			name: 'Round Extra',
 			description: `(+5)`,
-			price: undefined,
-		},
-		{
-			name: 'Medium/Long Length',
-            description: '(price varies)',
 			price: undefined,
 		},
 	],
@@ -221,75 +224,46 @@ const menu = [
 				name: 'Acrylic Full Set (Regular Polish)',
 				description: `Acrylic nails are are a mix of powder and liquid monomer that's combined into a blob of dough, shaped onto your nails with a brush, and then air-dried. Acrylics do not require a lamp to cure, and they're great for changing the shape or extending your nails.`,
 				price: 45,
+                additions: extensionAdditions,
 				subAddition: extensionSubAdditions,
 			},
             {
                 name: 'Acrylic Fill (w/ Regular Polish)',
                 description: undefined,
                 price: 40,
-                subAddition: {
-                    name: 'Additions',
-                    description: ``,
-                    price: undefined,
-                    items: [
-                        {
-                            name: 'Medium/Long Length',
-                            description: '(price varies)',
-                            price: undefined,
-                        },
-                    ],
-                }
+                additions: extensionAdditions,
             },
             {
                 name: 'Acrylic Full Set (Gel Polish)',
                 description: ``,
                 price: 55,
+                additions: extensionAdditions,
                 subAddition: extensionSubAdditions,
             },
             {
                 name: 'Acrylic Fill (w/ Gel Polish)',
                 description: undefined,
                 price: 50,
-                subAddition: {
-                    name: 'Additions',
-                    description: ``,
-                    price: undefined,
-                    items: [
-                        {
-                            name: 'Medium/Long Length',
-                            description: '(price varies)',
-                            price: undefined,
-                        },
-                    ],
-                }
+                additions: extensionAdditions,
             },
 			{
 				name: 'Builder Gel Full Set',
 				description: `Builder gel is a nail enhancement like acrylic nails, except it cures in a gel light. It is NOT gel polish/shellac/soft gel/soak off gel. You can put gel polish over hard gel (and you should because it looks great). You can extend the length of the nail with hard gel, just like acrylic. It can be sculpted and shaped just like acrylic. The only difference is that builder gel hardens through gel light rather than through evaporating solvents (like acrylic).`,
 				price: 65,
+                additions: extensionAdditions,
 				subAddition: extensionSubAdditions,
 			},
             {
                 name: 'Builder Gel Full Set Fill',
                 price: 58,
                 description: '',
-                subAddition: {
-                    name: 'Additions',
-                    description: ``,
-                    price: undefined,
-                    items: [
-                        {
-                            name: 'Medium/Long Length',
-                            description: '(price varies)',
-                            price: undefined,
-                        },
-                    ],
-                }
+                additions: extensionAdditions,
             },
 			{
 				name: 'Apres Gel-X',
 				description: `Apres Gel-X nails are like the lovechild of a gel mani, acrylic extensions and press-on nails. They’re applied over your entire nail bed (not just the tips, like acrylics or hard gel extensions). The extensions are clear – which means they can be used to create trends like seaglass nails – and come in different shapes and lengths.`,
 				price: 65,
+                additions: extensionAdditions,
 				subAddition: extensionSubAdditions,
 			},
             {
@@ -566,7 +540,7 @@ const Menu = () => {
 													}}
 												>
 													<div>
-														<p className='text-base text-gray-500'>
+														<p className='text-sm text-gray-500'>
 															{a.name}{' '}
 															<span className='text-sm italic font-light text-gray-500'>
 																{a.description}
